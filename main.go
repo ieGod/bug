@@ -3,6 +3,7 @@ package main
 import (
 	"bug/defaults"
 	"bug/manager"
+	"bug/scenes"
 	"fmt"
 	"log"
 
@@ -13,7 +14,8 @@ func main() {
 	fmt.Println(defaults.Strings.VersionInfo)
 
 	bugmanager := manager.NewBugManager()
-	bugmanager.LoadScenes()
+	bugmanager.LoadScene(scenes.NewIntroScene())
+	bugmanager.LoadScene(scenes.NewSwatScene())
 
 	ebiten.SetWindowSize(defaults.ScreenWidth, defaults.ScreenHeight)
 	ebiten.SetWindowTitle(defaults.Strings.Title)

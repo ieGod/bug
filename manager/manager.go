@@ -26,11 +26,12 @@ func NewBugManager() *Manager {
 	}
 }
 
-func (m *Manager) LoadScenes() {
-	m.scenes = append(m.scenes,
-		scenes.NewIntroScene(),
-		scenes.NewSwatScene(),
-	)
+func (m *Manager) LoadScene(scene scenes.BugScene) {
+	m.scenes = append(m.scenes, scene)
+}
+
+func (m *Manager) ClearScenes() {
+	m.scenes = m.scenes[:0]
 }
 
 func (m *Manager) Draw(screen *ebiten.Image) {
