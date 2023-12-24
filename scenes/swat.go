@@ -33,7 +33,7 @@ func NewSwatScene(dimensions coordinates.Dimension) *SwatScene {
 	var scene *SwatScene = &SwatScene{
 		bug:          elements.NewBug(),
 		splat:        elements.NewSplat(),
-		splatmask:    ebiten.NewImage(constants.SplatWidth, constants.SplatHeight),
+		splatmask:    ebiten.NewImage(constants.SplatWidth+96*2, constants.SplatHeight+96*2),
 		collidermask: ebiten.NewImage(constants.BugWidth*3, constants.BugHeight*3),
 		cycle:        0,
 		tick:         0,
@@ -205,10 +205,13 @@ func (scene *SwatScene) CheckCollisions() {
 		op.GeoM.Scale(3, 3)
 		scene.collidermask.DrawImage(scene.bug.Sprite, op)
 
-		scene.splatmask.DrawImage(scene.splat.Sprite, nil)
+		op.GeoM.Reset()
+		op.GeoM.Translate(96, 96) //this provides some margin for the mask that matches the bounds of the triple scaled 32x32 bug sprite
+		scene.splatmask.DrawImage(scene.splat.Sprite, op)
+
 		op.GeoM.Reset()
 		op.Blend = ebiten.BlendSourceIn
-		op.GeoM.Translate(ox, oy)
+		op.GeoM.Translate(ox-96, oy-96)
 		scene.collidermask.DrawImage(scene.splatmask, op)
 
 		var pixels []byte = make([]byte, constants.BugWidth*3*constants.BugWidth*3*4)
