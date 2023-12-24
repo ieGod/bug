@@ -7,6 +7,7 @@ type DefaultStrings struct {
 	Title       string
 	IntroName   string
 	SwatName    string
+	PressEnter  string
 }
 
 var (
@@ -20,4 +21,5 @@ func init() {
 	Strings.ThanksTxt = "buh bye thanks for playing"
 	Strings.IntroName = "intro"
 	Strings.SwatName = "swat"
+	Strings.PressEnter = "Press Enter to Play"
 }
