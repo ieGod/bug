@@ -1,4 +1,4 @@
-package defaults
+package constants
 
 const (
 	OffsetLoadingX = 25

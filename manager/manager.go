@@ -1,7 +1,7 @@
 package manager
 
 import (
-	"bug/defaults"
+	"bug/constants"
 	"bug/fonts"
 	"bug/scenes"
 	"fmt"
@@ -54,7 +54,7 @@ func (m *Manager) Update() error {
 
 	//we're pretty much done if we have no scenes remaining
 	if len(m.scenes) == 0 {
-		fmt.Println(defaults.Strings.ThanksTxt)
+		fmt.Println(constants.Strings.ThanksTxt)
 		return ebiten.Termination
 	} else if m.scenes[0].IsLoaded() {
 		//let's call our respective update
@@ -89,6 +89,6 @@ func (m *Manager) DrawLoading(img *ebiten.Image) {
 		dots = dots + " ."
 	}
 
-	loadtext := fmt.Sprintf("%s %s %s", defaults.Strings.Loading, m.scenes[0].GetName(), dots)
-	text.Draw(img, loadtext, fonts.Bugger.Standard, defaults.OffsetLoadingX, defaults.OffsetLoadingY, color.White)
+	loadtext := fmt.Sprintf("%s %s %s", constants.Strings.Loading, m.scenes[0].GetName(), dots)
+	text.Draw(img, loadtext, fonts.Bugger.Standard, constants.OffsetLoadingX, constants.OffsetLoadingY, color.White)
 }

@@ -1,4 +1,4 @@
-package defaults
+package constants
 
 type DefaultStrings struct {
 	Loading     string

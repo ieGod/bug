@@ -1,8 +1,8 @@
 package scenes
 
 import (
+	"bug/constants"
 	"bug/coordinates"
-	"bug/defaults"
 	"bug/fonts"
 	"bug/fx"
 	"bug/resources/images"
@@ -41,7 +41,7 @@ func (scene *IntroScene) Draw(img *ebiten.Image) {
 	op := &ebiten.DrawImageOptions{}
 	op.GeoM.Translate(float64(scene.dimensions.Width/2-380), float64(scene.dimensions.Height/2-200))
 	img.DrawImage(images.BugImages[images.IMGTITLE], op)
-	text.Draw(img, defaults.Strings.PressEnter, fonts.Bugger.Standard, scene.dimensions.Width/2-200, scene.dimensions.Height/2+200, color.White)
+	text.Draw(img, constants.Strings.PressEnter, fonts.Bugger.Standard, scene.dimensions.Width/2-200, scene.dimensions.Height/2+200, color.White)
 
 	scene.cycle++
 }
@@ -63,7 +63,7 @@ func (scene *IntroScene) Load() {
 }
 
 func (scene *IntroScene) GetName() string {
-	return defaults.Strings.IntroName
+	return constants.Strings.IntroName
 }
 
 func (scene *IntroScene) IsComplete() bool {

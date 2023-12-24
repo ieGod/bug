@@ -1,4 +1,4 @@
-package defaults
+package constants
 
 const (
 	DPI              = 72

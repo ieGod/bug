@@ -1,7 +1,7 @@
 package fonts
 
 import (
-	"bug/defaults"
+	"bug/constants"
 	"log"
 
 	"github.com/hajimehoshi/ebiten/examples/resources/fonts"
@@ -47,5 +47,5 @@ func init() {
 	Bugger = BugFont{}
 
 	fnt := LoadFontFatal(fonts.MPlus1pRegular_ttf)
-	Bugger.Standard = GetFaceFatal(fnt, defaults.DPI, defaults.FontSizeStandard)
+	Bugger.Standard = GetFaceFatal(fnt, constants.DPI, constants.FontSizeStandard)
 }

@@ -1,8 +1,8 @@
 package scenes
 
 import (
+	"bug/constants"
 	"bug/coordinates"
-	"bug/defaults"
 	"bug/elements"
 	"image/color"
 
@@ -61,7 +61,7 @@ func (scene *SwatScene) Load() {
 }
 
 func (scene *SwatScene) GetName() string {
-	return defaults.Strings.SwatName
+	return constants.Strings.SwatName
 }
 
 func (scene *SwatScene) IsComplete() bool {
