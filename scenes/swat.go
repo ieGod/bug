@@ -20,12 +20,14 @@ type SwatScene struct {
 	tick       int
 
 	//scene elements
-	bug *elements.Bug
+	bug   *elements.Bug
+	splat *elements.Splat
 }
 
 func NewSwatScene(dimensions coordinates.Dimension) *SwatScene {
 	var scene *SwatScene = &SwatScene{
 		bug:        elements.NewBug(),
+		splat:      elements.NewSplat(),
 		cycle:      0,
 		tick:       0,
 		loaded:     false,
@@ -41,6 +43,7 @@ func (scene *SwatScene) Draw(img *ebiten.Image) {
 
 	scene.RenderSurface(img)
 	scene.RenderBug(img)
+	scene.RenderSplat(img)
 	scene.cycle++
 }
 
@@ -50,6 +53,8 @@ func (scene *SwatScene) Update() error {
 	if scene.tick%7 == 0 {
 		scene.bug.Animate()
 	}
+
+	scene.splat.Animate()
 
 	scene.tick++
 	return nil
@@ -72,6 +77,7 @@ func (scene *SwatScene) IsComplete() bool {
 }
 
 func (scene *SwatScene) handleInputs() {
+
 	if inpututil.IsKeyJustPressed(ebiten.KeyQ) {
 		scene.complete = true
 	}
@@ -84,16 +90,34 @@ func (scene *SwatScene) handleInputs() {
 	}
 	if ebiten.IsKeyPressed(ebiten.KeyA) ||
 		ebiten.IsKeyPressed(ebiten.KeyArrowLeft) {
+		direction := coordinates.Direction{
+			Straight: false,
+			Right:    false,
+			Forward:  true,
+		}
 		newpos.X = newpos.X - constants.BugSpeed
+		scene.bug.SetRole(definitions.BugActionSideRun, direction)
+
 	}
 	if ebiten.IsKeyPressed(ebiten.KeyS) ||
 		ebiten.IsKeyPressed(ebiten.KeyArrowDown) {
 		newpos.Y = newpos.Y + constants.BugSpeed
-		scene.bug.SetRole(definitions.BugActionForwardRun)
+		direction := coordinates.Direction{
+			Straight: true,
+			Right:    false,
+			Forward:  true,
+		}
+		scene.bug.SetRole(definitions.BugActionForwardRun, direction)
 	}
 	if ebiten.IsKeyPressed(ebiten.KeyD) ||
 		ebiten.IsKeyPressed(ebiten.KeyArrowRight) {
+		direction := coordinates.Direction{
+			Straight: false,
+			Right:    true,
+			Forward:  true,
+		}
 		newpos.X = newpos.X + constants.BugSpeed
+		scene.bug.SetRole(definitions.BugActionSideRun, direction)
 	}
 	scene.bug.SetLocation(newpos)
 
@@ -105,8 +129,17 @@ func (scene *SwatScene) handleInputs() {
 		inpututil.IsKeyJustReleased(ebiten.KeyArrowLeft) ||
 		inpututil.IsKeyJustReleased(ebiten.KeyArrowDown) ||
 		inpututil.IsKeyJustReleased(ebiten.KeyArrowRight) {
-		scene.bug.SetRole(definitions.BugActionIdle)
+		direction := coordinates.Direction{
+			Straight: true,
+			Right:    false,
+			Forward:  true,
+		}
+		scene.bug.SetRole(definitions.BugActionIdle, direction)
 	}
+
+	var mpos coordinates.Vector
+	mpos.X, mpos.Y = ebiten.CursorPosition()
+	scene.splat.SetLocation(mpos)
 
 }
 
@@ -125,4 +158,13 @@ func (scene *SwatScene) RenderSurface(img *ebiten.Image) {
 	sy := float64(scene.dimensions.Height) / float64(tableimg.Bounds().Dy())
 	op.GeoM.Scale(sx, sy)
 	img.DrawImage(tableimg, op)
+}
+
+func (scene *SwatScene) RenderSplat(img *ebiten.Image) {
+	offset := scene.splat.GetLocation()
+	op := &ebiten.DrawImageOptions{}
+	op.GeoM.Translate(-float64(constants.SplatWidth)/2., -float64(constants.SplatHeight)/2.)
+	op.GeoM.Scale(2, 2)
+	op.GeoM.Translate(float64(offset.X), float64(offset.Y))
+	img.DrawImage(scene.splat.Sprite, op)
 }

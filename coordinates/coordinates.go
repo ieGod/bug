@@ -10,3 +10,9 @@ type Vector struct {
 	Y int
 	Z int
 }
+
+type Direction struct {
+	Straight bool
+	Right    bool
+	Forward  bool
+}
