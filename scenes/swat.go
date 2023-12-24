@@ -3,7 +3,9 @@ package scenes
 import (
 	"bug/constants"
 	"bug/coordinates"
+	"bug/definitions"
 	"bug/elements"
+	"bug/resources/images"
 	"image/color"
 
 	"github.com/hajimehoshi/ebiten/v2"
@@ -37,6 +39,7 @@ func (scene *SwatScene) Draw(img *ebiten.Image) {
 	img.Clear()
 	img.Fill(color.White)
 
+	scene.RenderSurface(img)
 	scene.RenderBug(img)
 	scene.cycle++
 }
@@ -86,6 +89,7 @@ func (scene *SwatScene) handleInputs() {
 	if ebiten.IsKeyPressed(ebiten.KeyS) ||
 		ebiten.IsKeyPressed(ebiten.KeyArrowDown) {
 		newpos.Y = newpos.Y + constants.BugSpeed
+		scene.bug.SetRole(definitions.BugActionForwardRun)
 	}
 	if ebiten.IsKeyPressed(ebiten.KeyD) ||
 		ebiten.IsKeyPressed(ebiten.KeyArrowRight) {
@@ -93,11 +97,32 @@ func (scene *SwatScene) handleInputs() {
 	}
 	scene.bug.SetLocation(newpos)
 
+	if inpututil.IsKeyJustReleased(ebiten.KeyW) ||
+		inpututil.IsKeyJustReleased(ebiten.KeyA) ||
+		inpututil.IsKeyJustReleased(ebiten.KeyS) ||
+		inpututil.IsKeyJustReleased(ebiten.KeyD) ||
+		inpututil.IsKeyJustReleased(ebiten.KeyArrowUp) ||
+		inpututil.IsKeyJustReleased(ebiten.KeyArrowLeft) ||
+		inpututil.IsKeyJustReleased(ebiten.KeyArrowDown) ||
+		inpututil.IsKeyJustReleased(ebiten.KeyArrowRight) {
+		scene.bug.SetRole(definitions.BugActionIdle)
+	}
+
 }
 
 func (scene *SwatScene) RenderBug(img *ebiten.Image) {
 	offset := scene.bug.GetLocation()
 	op := &ebiten.DrawImageOptions{}
+	op.GeoM.Scale(3, 3)
 	op.GeoM.Translate(float64(offset.X), float64(offset.Y))
 	img.DrawImage(scene.bug.Sprite, op)
+}
+
+func (scene *SwatScene) RenderSurface(img *ebiten.Image) {
+	op := &ebiten.DrawImageOptions{}
+	tableimg := images.BugImages[images.IMGTABLE]
+	sx := float64(scene.dimensions.Width) / float64(tableimg.Bounds().Dx())
+	sy := float64(scene.dimensions.Height) / float64(tableimg.Bounds().Dy())
+	op.GeoM.Scale(sx, sy)
+	img.DrawImage(tableimg, op)
 }

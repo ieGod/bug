@@ -3,6 +3,7 @@ package elements
 import (
 	"bug/constants"
 	"bug/coordinates"
+	"bug/definitions"
 	"bug/resources/images"
 	"image"
 
@@ -11,6 +12,7 @@ import (
 
 type Bug struct {
 	Sprite          *ebiten.Image
+	action          definitions.BugAction
 	location        coordinates.Vector
 	targetlocation  coordinates.Vector
 	animationframes int
@@ -20,6 +22,7 @@ type Bug struct {
 func NewBug() *Bug {
 	return &Bug{
 		Sprite:          ebiten.NewImage(constants.BugWidth, constants.BugHeight),
+		action:          definitions.BugActionIdle,
 		location:        coordinates.Vector{},
 		targetlocation:  coordinates.Vector{},
 		animationframes: constants.AnimationFrames,
@@ -31,8 +34,9 @@ func (bug *Bug) Animate() {
 
 	//todo: cycle offset depends on target number of frames
 	ox := (bug.cycle % bug.animationframes) * constants.BugWidth
+	oy := int(bug.action) * constants.BugHeight
 	bug.Sprite.DrawImage(images.BugImages[images.IMGSHADOW], nil)
-	bug.Sprite.DrawImage(images.BugImages[images.IMGBUG].SubImage(image.Rect(ox, 0, ox+constants.BugWidth, constants.BugHeight)).(*ebiten.Image), nil)
+	bug.Sprite.DrawImage(images.BugImages[images.IMGBUG].SubImage(image.Rect(ox, oy, ox+constants.BugWidth, oy+constants.BugHeight)).(*ebiten.Image), nil)
 	bug.cycle++
 }
 
@@ -54,4 +58,16 @@ func (bug *Bug) GetTargetLocation() coordinates.Vector {
 
 func (bug *Bug) SetTargetFrameCycles(cycles int) {
 	bug.animationframes = cycles
+}
+
+func (bug *Bug) SetRole(action definitions.BugAction) {
+	var targetframes int
+	bug.action = action
+	switch bug.action {
+	case definitions.BugActionIdle:
+		targetframes = constants.BugIdleFramecount
+	case definitions.BugActionForwardRun:
+		targetframes = constants.BugForwardRunFramecount
+	}
+	bug.SetTargetFrameCycles(targetframes)
 }

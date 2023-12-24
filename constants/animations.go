@@ -1,6 +1,8 @@
 package constants
 
 const (
-	AnimationFrames = 4
-	BugSpeed        = 10
+	AnimationFrames         = 4
+	BugSpeed                = 6
+	BugIdleFramecount       = 4
+	BugForwardRunFramecount = 6
 )
