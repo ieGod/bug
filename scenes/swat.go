@@ -72,10 +72,32 @@ func (scene *SwatScene) handleInputs() {
 	if inpututil.IsKeyJustPressed(ebiten.KeyQ) {
 		scene.complete = true
 	}
+
+	var newpos coordinates.Vector = scene.bug.GetLocation()
+
+	if ebiten.IsKeyPressed(ebiten.KeyW) ||
+		ebiten.IsKeyPressed(ebiten.KeyArrowUp) {
+		newpos.Y = newpos.Y - constants.BugSpeed
+	}
+	if ebiten.IsKeyPressed(ebiten.KeyA) ||
+		ebiten.IsKeyPressed(ebiten.KeyArrowLeft) {
+		newpos.X = newpos.X - constants.BugSpeed
+	}
+	if ebiten.IsKeyPressed(ebiten.KeyS) ||
+		ebiten.IsKeyPressed(ebiten.KeyArrowDown) {
+		newpos.Y = newpos.Y + constants.BugSpeed
+	}
+	if ebiten.IsKeyPressed(ebiten.KeyD) ||
+		ebiten.IsKeyPressed(ebiten.KeyArrowRight) {
+		newpos.X = newpos.X + constants.BugSpeed
+	}
+	scene.bug.SetLocation(newpos)
+
 }
 
 func (scene *SwatScene) RenderBug(img *ebiten.Image) {
+	offset := scene.bug.GetLocation()
 	op := &ebiten.DrawImageOptions{}
-	op.GeoM.Translate(100, 100)
+	op.GeoM.Translate(float64(offset.X), float64(offset.Y))
 	img.DrawImage(scene.bug.Sprite, op)
 }

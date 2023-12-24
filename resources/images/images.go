@@ -13,8 +13,9 @@ import (
 type BugAssetName string
 
 const (
-	IMGTITLE BugAssetName = "TITLE"
-	IMGBUG   BugAssetName = "BUG"
+	IMGTITLE  BugAssetName = "TITLE"
+	IMGBUG    BugAssetName = "BUG"
+	IMGSHADOW BugAssetName = "SHADOW"
 )
 
 var (
@@ -25,6 +26,9 @@ var (
 
 	//go:embed bug.png
 	bug_img []byte
+
+	//go:embed shadow.png
+	shadow_img []byte
 )
 
 func init() {
@@ -34,6 +38,7 @@ func init() {
 func LoadImageAssets() {
 	BugImages[IMGTITLE] = LoadImagesFatal(bugtitle_img)
 	BugImages[IMGBUG] = LoadImagesFatal(bug_img)
+	BugImages[IMGSHADOW] = LoadImagesFatal(shadow_img)
 
 }
 
