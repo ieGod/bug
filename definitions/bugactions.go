@@ -7,4 +7,5 @@ const (
 	BugActionForwardRun
 	BugActionSideRun
 	BugActionReverseRun
+	BugActionGlitch
 )

@@ -68,7 +68,7 @@ func (elem *Bug) SetTargetFrameCycles(cycles int) {
 }
 
 func (elem *Bug) SetRole(action definitions.BugAction, direction coordinates.Direction) {
-	var targetframes int
+	var targetframes int = constants.AnimationFrames
 	elem.action = action
 	elem.direction = direction
 	switch elem.action {
@@ -76,8 +76,13 @@ func (elem *Bug) SetRole(action definitions.BugAction, direction coordinates.Dir
 		targetframes = constants.BugIdleFramecount
 	case definitions.BugActionForwardRun,
 		definitions.BugActionSideRun,
-		definitions.BugActionReverseRun:
+		definitions.BugActionReverseRun,
+		definitions.BugActionGlitch:
 		targetframes = constants.BugForwardRunFramecount
 	}
 	elem.SetTargetFrameCycles(targetframes)
+}
+
+func (elem *Bug) GetAction() definitions.BugAction {
+	return elem.action
 }

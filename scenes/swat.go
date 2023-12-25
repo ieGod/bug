@@ -56,11 +56,13 @@ func (scene *SwatScene) Draw(img *ebiten.Image) {
 	scene.RenderSwatter(img)
 	scene.RenderSplat(img)
 
-	if scene.bugcollision && !scene.whack {
-		text.Draw(img, constants.Strings.Targeted, fonts.Bugger.Standard, 50, 150, color.White)
-	} else if scene.bugcollision && scene.whack {
-		text.Draw(img, constants.Strings.Splat, fonts.Bugger.Standard, 50, 150, color.White)
+	if scene.bug.GetAction() != definitions.BugActionGlitch {
+		if scene.bugcollision && !scene.whack {
+			text.Draw(img, constants.Strings.Targeted, fonts.Bugger.Standard, 50, 150, color.White)
+		} else if scene.bugcollision && scene.whack {
+			text.Draw(img, constants.Strings.Splat, fonts.Bugger.Standard, 50, 150, color.White)
 
+		}
 	}
 
 	scene.cycle++
@@ -115,6 +117,16 @@ func (scene *SwatScene) handleInputs() {
 		}
 		scene.bug.SetRole(definitions.BugActionReverseRun, direction)
 	}
+	if ebiten.IsKeyPressed(ebiten.KeyS) ||
+		ebiten.IsKeyPressed(ebiten.KeyArrowDown) {
+		newpos.Y = newpos.Y + constants.BugSpeed
+		direction := coordinates.Direction{
+			Straight: true,
+			Right:    false,
+			Forward:  true,
+		}
+		scene.bug.SetRole(definitions.BugActionForwardRun, direction)
+	}
 	if ebiten.IsKeyPressed(ebiten.KeyA) ||
 		ebiten.IsKeyPressed(ebiten.KeyArrowLeft) {
 		direction := coordinates.Direction{
@@ -125,16 +137,6 @@ func (scene *SwatScene) handleInputs() {
 		newpos.X = newpos.X - constants.BugSpeed
 		scene.bug.SetRole(definitions.BugActionSideRun, direction)
 
-	}
-	if ebiten.IsKeyPressed(ebiten.KeyS) ||
-		ebiten.IsKeyPressed(ebiten.KeyArrowDown) {
-		newpos.Y = newpos.Y + constants.BugSpeed
-		direction := coordinates.Direction{
-			Straight: true,
-			Right:    false,
-			Forward:  true,
-		}
-		scene.bug.SetRole(definitions.BugActionForwardRun, direction)
 	}
 	if ebiten.IsKeyPressed(ebiten.KeyD) ||
 		ebiten.IsKeyPressed(ebiten.KeyArrowRight) {
@@ -147,6 +149,17 @@ func (scene *SwatScene) handleInputs() {
 		scene.bug.SetRole(definitions.BugActionSideRun, direction)
 	}
 	scene.bug.SetLocation(newpos)
+
+	//GLITCH TIME
+	if ebiten.IsKeyPressed(ebiten.KeyF) {
+		direction := coordinates.Direction{
+			Straight: true,
+			Right:    false,
+			Forward:  false,
+		}
+		newpos.X = newpos.X + constants.BugSpeed
+		scene.bug.SetRole(definitions.BugActionGlitch, direction)
+	}
 
 	if inpututil.IsKeyJustReleased(ebiten.KeyW) ||
 		inpututil.IsKeyJustReleased(ebiten.KeyA) ||
@@ -244,11 +257,11 @@ func (scene *SwatScene) CheckCollisions() {
 
 func (scene *SwatScene) RenderSplat(img *ebiten.Image) {
 
-	if scene.bugcollision && scene.whack {
+	if scene.bugcollision && scene.whack && scene.bug.GetAction() != definitions.BugActionGlitch {
 		loc := scene.bug.GetLocation()
 
-		loc.X = loc.X - constants.BugWidth/2 - constants.SplatWidth/2
-		loc.Y = loc.Y - constants.BugHeight/2 - constants.SplatHeight/2
+		loc.X = loc.X - constants.BugWidth/2*3 - constants.SplatWidth/2
+		loc.Y = loc.Y - constants.BugHeight/2*3 - constants.SplatHeight/2
 
 		op := &ebiten.DrawImageOptions{}
 		op.GeoM.Translate(float64(loc.X), float64(loc.Y))
