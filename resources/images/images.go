@@ -13,12 +13,13 @@ import (
 type BugAssetName string
 
 const (
-	IMGTITLE  BugAssetName = "TITLE"
-	IMGBUG    BugAssetName = "BUG"
-	IMGSHADOW BugAssetName = "SHADOW"
-	IMGTABLE  BugAssetName = "TABLE"
-	IMGSPLAT  BugAssetName = "SPLAT"
-	IMGBLOOD  BugAssetName = "BLOOD"
+	IMGTITLE   BugAssetName = "TITLE"
+	IMGBUG     BugAssetName = "BUG"
+	IMGSHADOW  BugAssetName = "SHADOW"
+	IMGTABLE   BugAssetName = "TABLE"
+	IMGSPLAT   BugAssetName = "SPLAT"
+	IMGBLOOD   BugAssetName = "BLOOD"
+	IMGSWATCAM BugAssetName = "SWATCAM"
 )
 
 var (
@@ -41,6 +42,8 @@ var (
 
 	//go:embed blood.png
 	blood_img []byte
+	//go:embed swatcam.png
+	swatcam_img []byte
 )
 
 func init() {
@@ -54,6 +57,7 @@ func LoadImageAssets() {
 	BugImages[IMGTABLE] = LoadImagesFatal(table_img)
 	BugImages[IMGSPLAT] = LoadImagesFatal(splat_img)
 	BugImages[IMGBLOOD] = LoadImagesFatal(blood_img)
+	BugImages[IMGSWATCAM] = LoadImagesFatal(swatcam_img)
 
 }
 

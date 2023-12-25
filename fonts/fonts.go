@@ -12,6 +12,7 @@ import (
 
 type BugFont struct {
 	Standard font.Face
+	Large    font.Face
 }
 
 var (
@@ -48,4 +49,5 @@ func init() {
 
 	fnt := LoadFontFatal(fonts.MPlus1pRegular_ttf)
 	Bugger.Standard = GetFaceFatal(fnt, constants.DPI, constants.FontSizeStandard)
+	Bugger.Large = GetFaceFatal(fnt, constants.DPI, constants.FontSizeLarge)
 }

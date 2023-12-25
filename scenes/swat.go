@@ -6,12 +6,14 @@ import (
 	"bug/definitions"
 	"bug/elements"
 	"bug/fonts"
+	"bug/fx"
 	"bug/resources/images"
 	"image/color"
 
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/hajimehoshi/ebiten/v2/inpututil"
 	"github.com/hajimehoshi/ebiten/v2/text"
+	"github.com/hajimehoshi/ebiten/v2/vector"
 )
 
 type SwatScene struct {
@@ -53,8 +55,9 @@ func (scene *SwatScene) Draw(img *ebiten.Image) {
 
 	scene.RenderSurface(img)
 	scene.RenderBug(img)
-	scene.RenderSwatter(img)
 	scene.RenderSplat(img)
+	scene.RenderSwatter(img)
+	scene.RenderSwatCam(img)
 
 	if scene.bug.GetAction() != definitions.BugActionGlitch {
 		if scene.bugcollision && !scene.whack {
@@ -209,8 +212,6 @@ func (scene *SwatScene) RenderSwatter(img *ebiten.Image) {
 	//op.GeoM.Scale(2, 2)
 	op.GeoM.Translate(float64(offset.X), float64(offset.Y))
 	img.DrawImage(scene.swatter.Sprite, op)
-
-	img.DrawImage(scene.collidermask, nil)
 }
 
 func (scene *SwatScene) CheckCollisions() {
@@ -266,5 +267,26 @@ func (scene *SwatScene) RenderSplat(img *ebiten.Image) {
 		op := &ebiten.DrawImageOptions{}
 		op.GeoM.Translate(float64(loc.X), float64(loc.Y))
 		img.DrawImage(images.BugImages[images.IMGBLOOD], op)
+	}
+}
+
+// let's visualize what's going on with the collision mask and call it the swat cam
+func (scene *SwatScene) RenderSwatCam(img *ebiten.Image) {
+
+	ox := float64(img.Bounds().Bounds().Dx() - constants.SplatCamWidth - constants.OffsetSplatCamRightMargin)
+	oy := float64(constants.OffsetSplatCamTopMargin)
+
+	op := &ebiten.DrawImageOptions{}
+	op.GeoM.Translate(ox, oy)
+	img.DrawImage(images.BugImages[images.IMGSWATCAM], op)
+
+	if (scene.tick/30)%2 == 0 {
+		vector.DrawFilledCircle(img, float32(ox+constants.OffsetSplatCamTopMargin), float32(oy+constants.OffsetSplatCamLeftMargin), 5, fx.HexToRGBA(0xFF0000, 0xFF), true)
+	}
+
+	//include an inner margin before we draw the collider mask
+	if scene.bugcollision {
+		op.GeoM.Translate(constants.OffsetSplatCamLeftMargin, oy)
+		img.DrawImage(scene.collidermask, op)
 	}
 }

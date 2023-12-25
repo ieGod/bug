@@ -3,6 +3,8 @@ package scenes
 import (
 	"bug/constants"
 	"bug/coordinates"
+	"bug/definitions"
+	"bug/elements"
 	"bug/fonts"
 	"bug/fx"
 	"bug/resources/images"
@@ -15,6 +17,7 @@ import (
 
 type IntroScene struct {
 	dimensions coordinates.Dimension
+	bug        *elements.Bug
 	loaded     bool
 	complete   bool
 	cycle      int
@@ -26,6 +29,7 @@ type IntroScene struct {
 
 func NewIntroScene(dimensions coordinates.Dimension) *IntroScene {
 	var scene *IntroScene = &IntroScene{
+		bug:        elements.NewBug(),
 		cycle:      0,
 		tick:       0,
 		loaded:     false,
@@ -39,8 +43,12 @@ func (scene *IntroScene) Draw(img *ebiten.Image) {
 	img.Clear()
 	img.Fill(fx.HexToRGBA(0x8c0002, 0xff))
 	op := &ebiten.DrawImageOptions{}
+	op.GeoM.Scale(5, 5)
 	op.GeoM.Translate(float64(scene.dimensions.Width/2-380), float64(scene.dimensions.Height/2-200))
-	img.DrawImage(images.BugImages[images.IMGTITLE], op)
+
+	//img.DrawImage(images.BugImages[images.IMGTITLE], op)
+
+	img.DrawImage(scene.bug.Sprite, op)
 	text.Draw(img, constants.Strings.PressEnter, fonts.Bugger.Standard, scene.dimensions.Width/2-200, scene.dimensions.Height/2+200, color.White)
 
 	scene.cycle++
@@ -49,6 +57,10 @@ func (scene *IntroScene) Draw(img *ebiten.Image) {
 func (scene *IntroScene) Update() error {
 
 	scene.handleInput()
+
+	if scene.tick%7 == 0 {
+		scene.bug.Animate()
+	}
 	scene.tick++
 	return nil
 }
@@ -59,6 +71,12 @@ func (scene *IntroScene) IsLoaded() bool {
 
 func (scene *IntroScene) Load() {
 	images.LoadImageAssets()
+	dir := coordinates.Direction{
+		Straight: true,
+		Forward:  true,
+		Right:    false,
+	}
+	scene.bug.SetRole(definitions.BugActionGlitch, dir)
 	scene.loaded = true
 }
 
