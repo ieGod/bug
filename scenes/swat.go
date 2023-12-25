@@ -25,15 +25,16 @@ type SwatScene struct {
 	splatmask    *ebiten.Image
 	collidermask *ebiten.Image
 	bug          *elements.Bug
-	splat        *elements.Splat
-	bugcollision bool
+	swatter      *elements.Splat
+	bugcollision bool //does our splat mask cover part of the bug?
+	whack        bool //are we now whacking?
 }
 
 func NewSwatScene(dimensions coordinates.Dimension) *SwatScene {
 	var scene *SwatScene = &SwatScene{
 		bug:          elements.NewBug(),
-		splat:        elements.NewSplat(),
-		splatmask:    ebiten.NewImage(constants.SplatWidth+96*2, constants.SplatHeight+96*2),
+		swatter:      elements.NewSplat(),
+		splatmask:    ebiten.NewImage(constants.SwatWidth+96*2, constants.SwatHeight+96*2),
 		collidermask: ebiten.NewImage(constants.BugWidth*3, constants.BugHeight*3),
 		cycle:        0,
 		tick:         0,
@@ -41,6 +42,7 @@ func NewSwatScene(dimensions coordinates.Dimension) *SwatScene {
 		complete:     false,
 		dimensions:   dimensions,
 		bugcollision: false,
+		whack:        false,
 	}
 	return scene
 }
@@ -51,10 +53,14 @@ func (scene *SwatScene) Draw(img *ebiten.Image) {
 
 	scene.RenderSurface(img)
 	scene.RenderBug(img)
+	scene.RenderSwatter(img)
 	scene.RenderSplat(img)
 
-	if scene.bugcollision {
+	if scene.bugcollision && !scene.whack {
 		text.Draw(img, constants.Strings.Targeted, fonts.Bugger.Standard, 50, 150, color.White)
+	} else if scene.bugcollision && scene.whack {
+		text.Draw(img, constants.Strings.Splat, fonts.Bugger.Standard, 50, 150, color.White)
+
 	}
 
 	scene.cycle++
@@ -67,7 +73,7 @@ func (scene *SwatScene) Update() error {
 		scene.bug.Animate()
 	}
 
-	scene.splat.Animate()
+	scene.swatter.Animate()
 
 	scene.CheckCollisions()
 
@@ -152,9 +158,11 @@ func (scene *SwatScene) handleInputs() {
 		scene.bug.SetRole(definitions.BugActionIdle, direction)
 	}
 
+	scene.whack = ebiten.IsMouseButtonPressed(ebiten.MouseButtonLeft)
+
 	var mpos coordinates.Vector
 	mpos.X, mpos.Y = ebiten.CursorPosition()
-	scene.splat.SetLocation(mpos)
+	scene.swatter.SetLocation(mpos)
 
 }
 
@@ -175,13 +183,13 @@ func (scene *SwatScene) RenderSurface(img *ebiten.Image) {
 	img.DrawImage(tableimg, op)
 }
 
-func (scene *SwatScene) RenderSplat(img *ebiten.Image) {
-	offset := scene.splat.GetLocation()
+func (scene *SwatScene) RenderSwatter(img *ebiten.Image) {
+	offset := scene.swatter.GetLocation()
 	op := &ebiten.DrawImageOptions{}
-	op.GeoM.Translate(-float64(constants.SplatWidth)/2.-40, -float64(constants.SplatHeight)/2.)
+	op.GeoM.Translate(-float64(constants.SwatWidth)/2.-40, -float64(constants.SwatHeight)/2.)
 	//op.GeoM.Scale(2, 2)
 	op.GeoM.Translate(float64(offset.X), float64(offset.Y))
-	img.DrawImage(scene.splat.Sprite, op)
+	img.DrawImage(scene.swatter.Sprite, op)
 
 	img.DrawImage(scene.collidermask, nil)
 }
@@ -189,13 +197,13 @@ func (scene *SwatScene) RenderSplat(img *ebiten.Image) {
 func (scene *SwatScene) CheckCollisions() {
 
 	bugloc := scene.bug.GetLocation()
-	splatloc := scene.splat.GetLocation()
-	splatloc.X = splatloc.X - constants.SplatWidth/2 - 40
-	splatloc.Y = splatloc.Y - constants.SplatHeight/2
+	splatloc := scene.swatter.GetLocation()
+	splatloc.X = splatloc.X - constants.SwatWidth/2 - 40
+	splatloc.Y = splatloc.Y - constants.SwatHeight/2
 	var c bool = false
 	//check bounding boxes first, if we're in range we need a more precise check
-	if bugloc.X >= splatloc.X-96 && bugloc.X < splatloc.X+constants.SplatWidth &&
-		bugloc.Y >= splatloc.Y-96 && bugloc.Y < splatloc.Y+constants.SplatHeight {
+	if bugloc.X >= splatloc.X-96 && bugloc.X < splatloc.X+constants.SwatWidth &&
+		bugloc.Y >= splatloc.Y-96 && bugloc.Y < splatloc.Y+constants.SwatHeight {
 		//fmt.Println("collision requires more precise check")
 
 		scene.collidermask.Clear()
@@ -207,7 +215,7 @@ func (scene *SwatScene) CheckCollisions() {
 
 		op.GeoM.Reset()
 		op.GeoM.Translate(96, 96) //this provides some margin for the mask that matches the bounds of the triple scaled 32x32 bug sprite
-		scene.splatmask.DrawImage(scene.splat.Sprite, op)
+		scene.splatmask.DrawImage(scene.swatter.Sprite, op)
 
 		op.GeoM.Reset()
 		op.Blend = ebiten.BlendSourceIn
@@ -226,4 +234,18 @@ func (scene *SwatScene) CheckCollisions() {
 	}
 	scene.bugcollision = c
 
+}
+
+func (scene *SwatScene) RenderSplat(img *ebiten.Image) {
+
+	if scene.bugcollision && scene.whack {
+		loc := scene.bug.GetLocation()
+
+		loc.X = loc.X - constants.BugWidth/2 - constants.SplatWidth/2
+		loc.Y = loc.Y - constants.BugHeight/2 - constants.SplatHeight/2
+
+		op := &ebiten.DrawImageOptions{}
+		op.GeoM.Translate(float64(loc.X), float64(loc.Y))
+		img.DrawImage(images.BugImages[images.IMGBLOOD], op)
+	}
 }

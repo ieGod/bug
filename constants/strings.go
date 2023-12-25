@@ -9,6 +9,7 @@ type DefaultStrings struct {
 	SwatName    string
 	PressEnter  string
 	Targeted    string
+	Splat       string
 }
 
 var (
@@ -24,4 +25,5 @@ func init() {
 	Strings.SwatName = "swat"
 	Strings.PressEnter = "Press Enter to Play"
 	Strings.Targeted = "juicy boy in crosshairs"
+	Strings.Splat = "juicy boy go splat"
 }

@@ -17,7 +17,7 @@ type Splat struct {
 
 func NewSplat() *Splat {
 	return &Splat{
-		Sprite: ebiten.NewImage(constants.SplatWidth, constants.SplatHeight),
+		Sprite: ebiten.NewImage(constants.SwatWidth, constants.SwatHeight),
 		cycle:  0,
 	}
 }

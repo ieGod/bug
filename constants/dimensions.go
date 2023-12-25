@@ -5,6 +5,8 @@ const (
 	ScreenHeight = 720
 	BugWidth     = 32
 	BugHeight    = 32
-	SplatWidth   = 276
-	SplatHeight  = 403
+	SwatWidth    = 276
+	SwatHeight   = 403
+	SplatWidth   = 64
+	SplatHeight  = 64
 )

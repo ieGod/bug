@@ -18,6 +18,7 @@ const (
 	IMGSHADOW BugAssetName = "SHADOW"
 	IMGTABLE  BugAssetName = "TABLE"
 	IMGSPLAT  BugAssetName = "SPLAT"
+	IMGBLOOD  BugAssetName = "BLOOD"
 )
 
 var (
@@ -37,6 +38,9 @@ var (
 
 	//go:embed splat.png
 	splat_img []byte
+
+	//go:embed blood.png
+	blood_img []byte
 )
 
 func init() {
@@ -49,6 +53,7 @@ func LoadImageAssets() {
 	BugImages[IMGSHADOW] = LoadImagesFatal(shadow_img)
 	BugImages[IMGTABLE] = LoadImagesFatal(table_img)
 	BugImages[IMGSPLAT] = LoadImagesFatal(splat_img)
+	BugImages[IMGBLOOD] = LoadImagesFatal(blood_img)
 
 }
 
