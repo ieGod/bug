@@ -108,6 +108,12 @@ func (scene *SwatScene) handleInputs() {
 	if ebiten.IsKeyPressed(ebiten.KeyW) ||
 		ebiten.IsKeyPressed(ebiten.KeyArrowUp) {
 		newpos.Y = newpos.Y - constants.BugSpeed
+		direction := coordinates.Direction{
+			Straight: true,
+			Right:    false,
+			Forward:  false,
+		}
+		scene.bug.SetRole(definitions.BugActionReverseRun, direction)
 	}
 	if ebiten.IsKeyPressed(ebiten.KeyA) ||
 		ebiten.IsKeyPressed(ebiten.KeyArrowLeft) {

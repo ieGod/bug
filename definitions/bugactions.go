@@ -6,4 +6,5 @@ const (
 	BugActionIdle BugAction = iota
 	BugActionForwardRun
 	BugActionSideRun
+	BugActionReverseRun
 )

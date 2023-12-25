@@ -74,10 +74,10 @@ func (elem *Bug) SetRole(action definitions.BugAction, direction coordinates.Dir
 	switch elem.action {
 	case definitions.BugActionIdle:
 		targetframes = constants.BugIdleFramecount
-	case definitions.BugActionForwardRun:
+	case definitions.BugActionForwardRun,
+		definitions.BugActionSideRun,
+		definitions.BugActionReverseRun:
 		targetframes = constants.BugForwardRunFramecount
-	case definitions.BugActionSideRun:
-		targetframes = constants.BugSideRunFramecount
 	}
 	elem.SetTargetFrameCycles(targetframes)
 }
