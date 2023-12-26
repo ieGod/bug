@@ -1,15 +1,16 @@
 package constants
 
 type DefaultStrings struct {
-	Loading     string
-	ThanksTxt   string
-	VersionInfo string
-	Title       string
-	IntroName   string
-	SwatName    string
-	PressEnter  string
-	Targeted    string
-	Splat       string
+	Loading      string
+	ThanksTxt    string
+	VersionInfo  string
+	Title        string
+	IntroName    string
+	SwatName     string
+	AsphodelName string
+	PressEnter   string
+	Targeted     string
+	Splat        string
 }
 
 var (
@@ -23,6 +24,7 @@ func init() {
 	Strings.ThanksTxt = "buh bye thanks for playing"
 	Strings.IntroName = "intro"
 	Strings.SwatName = "swat"
+	Strings.AsphodelName = "asphodel"
 	Strings.PressEnter = "Press Enter to Play"
 	Strings.Targeted = "juicy boy in crosshairs"
 	Strings.Splat = "juicy boy go splat"

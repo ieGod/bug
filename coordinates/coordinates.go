@@ -1,14 +1,14 @@
 package coordinates
 
 type Dimension struct {
-	Height int
-	Width  int
+	Height int `json:"Height"`
+	Width  int `json:"Width"`
 }
 
 type Vector struct {
-	X int
-	Y int
-	Z int
+	X int `json:"X"`
+	Y int `json:"Y"`
+	Z int `json:"Z"`
 }
 
 type Direction struct {
