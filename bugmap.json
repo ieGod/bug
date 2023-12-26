@@ -1,7 +1,7 @@
 {
   "Dimensions": {
-    "Width": 28,
-    "Height": 9
+    "Width": 8,
+    "Height": 5
   },
   "Nodes": [
     {
@@ -10,7 +10,8 @@
         "Y": 0,
         "Z": 0
       },
-      "Nodetype": 1
+      "Nodetype": 1,
+      "Nodetile": 3
     },
     {
       "Location": {
@@ -18,7 +19,8 @@
         "Y": 0,
         "Z": 0
       },
-      "Nodetype": 1
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
@@ -26,7 +28,8 @@
         "Y": 0,
         "Z": 0
       },
-      "Nodetype": 1
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
@@ -34,7 +37,8 @@
         "Y": 0,
         "Z": 0
       },
-      "Nodetype": 1
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
@@ -42,7 +46,8 @@
         "Y": 0,
         "Z": 0
       },
-      "Nodetype": 1
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
@@ -50,7 +55,8 @@
         "Y": 0,
         "Z": 0
       },
-      "Nodetype": 1
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
@@ -58,7 +64,8 @@
         "Y": 0,
         "Z": 0
       },
-      "Nodetype": 1
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
@@ -66,167 +73,8 @@
         "Y": 0,
         "Z": 0
       },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 8,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 9,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 10,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 11,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 12,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 13,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 14,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 15,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 16,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 17,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 18,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 19,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 20,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 21,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 22,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 23,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 24,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 25,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 26,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 27,
-        "Y": 0,
-        "Z": 0
-      },
-      "Nodetype": 1
+      "Nodetype": 1,
+      "Nodetile": 7
     },
     {
       "Location": {
@@ -234,7 +82,8 @@
         "Y": 1,
         "Z": 0
       },
-      "Nodetype": 1
+      "Nodetype": 1,
+      "Nodetile": 3
     },
     {
       "Location": {
@@ -242,7 +91,8 @@
         "Y": 1,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -250,7 +100,8 @@
         "Y": 1,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -258,7 +109,8 @@
         "Y": 1,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -266,7 +118,8 @@
         "Y": 1,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -274,7 +127,8 @@
         "Y": 1,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -282,7 +136,8 @@
         "Y": 1,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -290,167 +145,8 @@
         "Y": 1,
         "Z": 0
       },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 8,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 9,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 10,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 11,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 12,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 13,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 14,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 15,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 16,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 17,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 18,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 19,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 20,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 21,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 22,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 23,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 24,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 25,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 26,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 27,
-        "Y": 1,
-        "Z": 0
-      },
-      "Nodetype": 1
+      "Nodetype": 1,
+      "Nodetile": 7
     },
     {
       "Location": {
@@ -458,7 +154,8 @@
         "Y": 2,
         "Z": 0
       },
-      "Nodetype": 1
+      "Nodetype": 1,
+      "Nodetile": 3
     },
     {
       "Location": {
@@ -466,7 +163,8 @@
         "Y": 2,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -474,7 +172,8 @@
         "Y": 2,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -482,7 +181,8 @@
         "Y": 2,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -490,7 +190,8 @@
         "Y": 2,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -498,7 +199,8 @@
         "Y": 2,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -506,7 +208,8 @@
         "Y": 2,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -514,167 +217,8 @@
         "Y": 2,
         "Z": 0
       },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 8,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 9,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 10,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 11,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 12,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 13,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 14,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 15,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 16,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 17,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 18,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 19,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 20,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 21,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 22,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 23,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 24,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 25,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 26,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 27,
-        "Y": 2,
-        "Z": 0
-      },
-      "Nodetype": 1
+      "Nodetype": 1,
+      "Nodetile": 7
     },
     {
       "Location": {
@@ -682,7 +226,8 @@
         "Y": 3,
         "Z": 0
       },
-      "Nodetype": 1
+      "Nodetype": 1,
+      "Nodetile": 3
     },
     {
       "Location": {
@@ -690,7 +235,8 @@
         "Y": 3,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -698,7 +244,8 @@
         "Y": 3,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -706,7 +253,8 @@
         "Y": 3,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -714,7 +262,8 @@
         "Y": 3,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -722,7 +271,8 @@
         "Y": 3,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -730,7 +280,8 @@
         "Y": 3,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -738,167 +289,8 @@
         "Y": 3,
         "Z": 0
       },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 8,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 9,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 10,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 11,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 12,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 13,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 14,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 15,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 16,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 17,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 18,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 19,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 20,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 21,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 22,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 23,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 24,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 25,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 26,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 27,
-        "Y": 3,
-        "Z": 0
-      },
-      "Nodetype": 1
+      "Nodetype": 1,
+      "Nodetile": 7
     },
     {
       "Location": {
@@ -906,7 +298,8 @@
         "Y": 4,
         "Z": 0
       },
-      "Nodetype": 1
+      "Nodetype": 1,
+      "Nodetile": 4
     },
     {
       "Location": {
@@ -914,7 +307,8 @@
         "Y": 4,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 1,
+      "Nodetile": 5
     },
     {
       "Location": {
@@ -922,7 +316,8 @@
         "Y": 4,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 1,
+      "Nodetile": 5
     },
     {
       "Location": {
@@ -930,7 +325,8 @@
         "Y": 4,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 1,
+      "Nodetile": 5
     },
     {
       "Location": {
@@ -938,7 +334,8 @@
         "Y": 4,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 1,
+      "Nodetile": 5
     },
     {
       "Location": {
@@ -946,7 +343,8 @@
         "Y": 4,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 1,
+      "Nodetile": 5
     },
     {
       "Location": {
@@ -954,7 +352,8 @@
         "Y": 4,
         "Z": 0
       },
-      "Nodetype": 0
+      "Nodetype": 1,
+      "Nodetile": 5
     },
     {
       "Location": {
@@ -962,1063 +361,8 @@
         "Y": 4,
         "Z": 0
       },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 8,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 9,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 10,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 11,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 12,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 13,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 14,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 15,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 16,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 17,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 18,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 19,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 20,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 21,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 22,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 23,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 24,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 25,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 26,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 27,
-        "Y": 4,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 0,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 1,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 2,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 3,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 4,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 5,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 6,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 7,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 8,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 9,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 10,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 11,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 12,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 13,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 14,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 15,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 16,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 17,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 18,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 19,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 20,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 21,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 22,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 23,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 24,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 25,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 26,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 27,
-        "Y": 5,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 0,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 1,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 2,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 3,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 4,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 5,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 6,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 7,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 8,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 9,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 10,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 11,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 12,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 13,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 14,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 15,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 16,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 17,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 18,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 19,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 20,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 21,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 22,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 23,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 24,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 25,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 26,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 27,
-        "Y": 6,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 0,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 1,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 2,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 3,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 4,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 5,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 6,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 7,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 8,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 9,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 10,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 11,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 12,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 13,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 14,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 15,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 16,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 17,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 18,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 19,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 20,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 21,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 22,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 23,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 24,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 25,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 26,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 0
-    },
-    {
-      "Location": {
-        "X": 27,
-        "Y": 7,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 0,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 1,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 2,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 3,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 4,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 5,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 6,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 7,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 8,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 9,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 10,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 11,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 12,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 13,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 14,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 15,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 16,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 17,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 18,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 19,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 20,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 21,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 22,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 23,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 24,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 25,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 26,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
-    },
-    {
-      "Location": {
-        "X": 27,
-        "Y": 8,
-        "Z": 0
-      },
-      "Nodetype": 1
+      "Nodetype": 1,
+      "Nodetile": 6
     }
   ]
 }

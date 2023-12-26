@@ -11,8 +11,12 @@ type NodeTile int
 
 const (
 	NodeTileGround NodeTile = iota
-	NodeTileWallLeft
 	NodeTileWallTop
+	NodeTileWallTopLeft
+	NodeTileWallLeft
+	NodeTileWallBottomLeft
+	NodeTileWallBottom
+	NodeTileWallBottomRight
 	NodeTileWallRight
-	NdoeTileWallBottom
+	NodeTileWallTopRight
 )

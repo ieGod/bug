@@ -6,7 +6,9 @@ import (
 	"bug/coordinates"
 	"bug/definitions"
 	"bug/fx"
+	"bug/resources/images"
 	"encoding/json"
+	"image"
 	"log"
 	"os"
 
@@ -43,14 +45,15 @@ func (scene *AsphodelScene) Draw(img *ebiten.Image) {
 		for h := 0; h < scene.bugmap.Dimensions.Height; h++ {
 			grididx := h*scene.bugmap.Dimensions.Width + w
 
-			var srcimg *ebiten.Image
-			switch scene.bugmap.Nodes[grididx].Nodetype {
-			case definitions.NodeTypeGround:
-				srcimg = scene.ground
-			case definitions.NodeTypeWall:
-				srcimg = scene.wall
-			}
-
+			var srcimg *ebiten.Image = scene.GetImageFromNodeTile(scene.bugmap.Nodes[grididx].Nodetile)
+			/*
+				switch scene.bugmap.Nodes[grididx].Nodetype {
+				case definitions.NodeTypeGround:
+					srcimg = scene.ground
+				case definitions.NodeTypeWall:
+					srcimg = scene.wall
+				}
+			*/
 			ox := float64(w * 32)
 			oy := float64(h * 32)
 
@@ -112,4 +115,39 @@ func (scene *AsphodelScene) IsComplete() bool {
 
 func (scene *AsphodelScene) GetName() string {
 	return constants.Strings.AsphodelName
+}
+
+func (scene *AsphodelScene) GetImageFromNodeTile(tiletype definitions.NodeTile) *ebiten.Image {
+
+	var img *ebiten.Image
+	var x0, y0 int
+	switch tiletype {
+	case definitions.NodeTileGround:
+		x0 = 32
+		y0 = 32
+	case definitions.NodeTileWallBottom:
+		x0 = 32
+		y0 = 32 * 4
+	case definitions.NodeTileWallLeft,
+		definitions.NodeTileWallTopLeft:
+		x0 = 0
+		y0 = 32
+	case definitions.NodeTileWallRight,
+		definitions.NodeTileWallTopRight:
+		x0 = 32 * 5
+		y0 = 32
+	case definitions.NodeTileWallTop:
+		x0 = 32
+		y0 = 0
+	case definitions.NodeTileWallBottomLeft:
+		x0 = 0
+		y0 = 32 * 4
+	case definitions.NodeTileWallBottomRight:
+		x0 = 32 * 5
+		y0 = 32 * 4
+	}
+
+	img = images.BugImages[images.IMGTILESET].SubImage(image.Rect(x0, y0, x0+32, y0+32)).(*ebiten.Image)
+	return img
+
 }
