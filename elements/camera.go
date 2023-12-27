@@ -56,8 +56,8 @@ func (elem *BugCam) CloseTargets() {
 	if dist > 0.005 {
 		angle := math.Atan2(dy, dx)
 
-		xadjust := dist * math.Cos(angle) / 4
-		yadjust := dist * math.Sin(angle) / 4
+		xadjust := dist * math.Cos(angle) / elem.params.Easing
+		yadjust := dist * math.Sin(angle) / elem.params.Easing
 
 		elem.params.Location.X += xadjust
 		elem.params.Location.Y += yadjust

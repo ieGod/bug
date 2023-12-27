@@ -3,6 +3,7 @@ package constants
 const (
 	ScreenWidth    = 1280
 	ScreenHeight   = 720
+	Scale          = 3
 	BugWidth       = 32
 	BugHeight      = 32
 	SwatWidth      = 276
