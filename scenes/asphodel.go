@@ -5,6 +5,7 @@ import (
 	"bug/constants"
 	"bug/coordinates"
 	"bug/definitions"
+	"bug/elements"
 	"bug/fx"
 	"bug/resources/images"
 	"encoding/json"
@@ -13,36 +14,88 @@ import (
 	"os"
 
 	"github.com/hajimehoshi/ebiten/v2"
+	"github.com/hajimehoshi/ebiten/v2/inpututil"
 )
 
 type AsphodelScene struct {
 	dimensions coordinates.Dimension
 	loaded     bool
+	tick       int
 
 	//scene components
 	bugmap *bugmap.Level
 	scene  *ebiten.Image
+	bugcam *elements.BugCam
 
 	//scene elements
 	ground *ebiten.Image
 	wall   *ebiten.Image
+	bug    *elements.Bug
 }
 
 func NewAsphodelScene(dimensions coordinates.Dimension) *AsphodelScene {
-	return &AsphodelScene{
+	asphodel := &AsphodelScene{
 		dimensions: dimensions,
 		loaded:     false,
+		bugcam:     elements.NewBugCam(),
+		bug:        elements.NewBug(),
 	}
+
+	asphodel.bugcam.SetParams(definitions.Paramecas{
+		Location: coordinates.Vector64{
+			X: 0,
+			Y: 0,
+			Z: 0,
+		},
+		TargetLocation: coordinates.Vector64{
+			X: 0,
+			Y: 0,
+			Z: 0,
+		},
+		Scale: coordinates.Vector64{
+			X: 2,
+			Y: 2,
+			Z: 0,
+		},
+	})
+
+	return asphodel
 }
 
 func (scene *AsphodelScene) Draw(img *ebiten.Image) {
 
 	img.Clear()
 
-	img.DrawImage(scene.scene, nil)
+	op := &ebiten.DrawImageOptions{}
+	//op.GeoM.Scale(2, 2)
+
+	paramecas := scene.bugcam.GetParams()
+
+	mx := paramecas.Location.X
+	my := paramecas.Location.Y
+	sx := paramecas.Scale.X
+	sy := paramecas.Scale.Y
+
+	op.GeoM.Scale(sx, sy)
+	op.GeoM.Translate(-float64(mx), -float64(my))
+
+	img.DrawImage(scene.scene, op)
+
+	op.GeoM.Reset()
+	op.GeoM.Scale(2, 2)
+	op.GeoM.Translate(64, 64)
+	img.DrawImage(scene.bug.Sprite, op)
 }
 
 func (scene *AsphodelScene) Update() error {
+	scene.handleInputs()
+	scene.bugcam.CloseTargets()
+
+	if scene.tick%7 == 0 {
+		scene.bug.Animate()
+	}
+
+	scene.tick++
 	return nil
 }
 
@@ -146,5 +199,35 @@ func (scene *AsphodelScene) GenerateMap() {
 			op.GeoM.Translate(ox, oy)
 			scene.scene.DrawImage(srcimg, op)
 		}
+	}
+}
+
+func (scene *AsphodelScene) handleInputs() {
+
+	var update bool = false
+
+	params := scene.bugcam.GetParams()
+	if inpututil.IsKeyJustPressed(ebiten.KeyD) {
+		params.TargetLocation.X += 32 * params.Scale.X
+		update = true
+	}
+
+	if inpututil.IsKeyJustPressed(ebiten.KeyA) {
+		params.TargetLocation.X -= 32 * params.Scale.X
+		update = true
+	}
+
+	if inpututil.IsKeyJustPressed(ebiten.KeyW) {
+		params.TargetLocation.Y -= 32 * params.Scale.Y
+		update = true
+	}
+
+	if inpututil.IsKeyJustPressed(ebiten.KeyS) {
+		params.TargetLocation.Y += 32 * params.Scale.Y
+		update = true
+	}
+
+	if update {
+		scene.bugcam.SetParams(params)
 	}
 }

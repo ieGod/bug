@@ -11,6 +11,12 @@ type Vector struct {
 	Z int `json:"Z"`
 }
 
+type Vector64 struct {
+	X float64
+	Y float64
+	Z float64
+}
+
 type Direction struct {
 	Straight bool
 	Right    bool
