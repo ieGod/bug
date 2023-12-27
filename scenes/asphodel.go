@@ -323,14 +323,15 @@ func (scene *AsphodelScene) handleInputs2() {
 		scene.bug.SetRole(definitions.BugActionIdle, direction)
 	}
 
-	if update && 0 <= newpos.X && newpos.X < scene.bugmap.Dimensions.Width &&
-		0 <= newpos.Y && newpos.Y < scene.bugmap.Dimensions.Height {
+	if update {
 
 		//fmt.Printf("%d, %d\n", newpos.X, newpos.Y)
 
-		//gidx := newpos.Y*scene.bugmap.Dimensions.Width + newpos.X
+		//first criteria passed, we're within map bounds and an update is required, next we
+		//check whether or not the new position is a legal move
+		gidx := newpos.Y*scene.bugmap.Dimensions.Width + newpos.X
 
-		if scene.tick%7 == 0 {
+		if scene.bugmap.Nodes[gidx].Nodetype != definitions.NodeTypeWall && scene.tick%7 == 0 {
 			scene.bug.SetLocation(newpos)
 			scene.bug.SetTargetLocation(newpos)
 			scene.bugcam.SetParams(params)
