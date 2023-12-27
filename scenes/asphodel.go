@@ -39,30 +39,6 @@ func (scene *AsphodelScene) Draw(img *ebiten.Image) {
 
 	img.Clear()
 
-	op := &ebiten.DrawImageOptions{}
-	//draw the map/tiles
-	for w := 0; w < scene.bugmap.Dimensions.Width; w++ {
-		for h := 0; h < scene.bugmap.Dimensions.Height; h++ {
-			grididx := h*scene.bugmap.Dimensions.Width + w
-
-			var srcimg *ebiten.Image = scene.GetImageFromNodeTile(scene.bugmap.Nodes[grididx].Nodetile)
-			/*
-				switch scene.bugmap.Nodes[grididx].Nodetype {
-				case definitions.NodeTypeGround:
-					srcimg = scene.ground
-				case definitions.NodeTypeWall:
-					srcimg = scene.wall
-				}
-			*/
-			ox := float64(w * 32)
-			oy := float64(h * 32)
-
-			op.GeoM.Reset()
-			op.GeoM.Translate(ox, oy)
-			scene.scene.DrawImage(srcimg, op)
-		}
-	}
-
 	img.DrawImage(scene.scene, nil)
 }
 
@@ -100,6 +76,8 @@ func (scene *AsphodelScene) Load() {
 	scene.wall = ebiten.NewImage(32, 32)
 	scene.ground.Fill(fx.HexToRGBA(0x44FF44, 0xFF))
 	scene.wall.Fill(fx.HexToRGBA(0x000044, 0xFF))
+
+	scene.GenerateMap()
 
 	scene.loaded = true
 
@@ -150,4 +128,23 @@ func (scene *AsphodelScene) GetImageFromNodeTile(tiletype definitions.NodeTile) 
 	img = images.BugImages[images.IMGTILESET].SubImage(image.Rect(x0, y0, x0+32, y0+32)).(*ebiten.Image)
 	return img
 
+}
+
+func (scene *AsphodelScene) GenerateMap() {
+	op := &ebiten.DrawImageOptions{}
+	//draw the map/tiles
+	for w := 0; w < scene.bugmap.Dimensions.Width; w++ {
+		for h := 0; h < scene.bugmap.Dimensions.Height; h++ {
+			grididx := h*scene.bugmap.Dimensions.Width + w
+
+			var srcimg *ebiten.Image = scene.GetImageFromNodeTile(scene.bugmap.Nodes[grididx].Nodetile)
+
+			ox := float64(w * 32)
+			oy := float64(h * 32)
+
+			op.GeoM.Reset()
+			op.GeoM.Translate(ox, oy)
+			scene.scene.DrawImage(srcimg, op)
+		}
+	}
 }
