@@ -68,7 +68,7 @@ func (m *Manager) Update() error {
 		}
 
 	} else if !m.loadcalled {
-		m.scenes[0].Load()
+		go m.scenes[0].Load()
 		m.loadcalled = true
 	}
 
