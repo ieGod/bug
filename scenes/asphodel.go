@@ -23,14 +23,16 @@ type AsphodelScene struct {
 	tick       int
 
 	//scene components
-	bugmap *bugmap.Level
-	scene  *ebiten.Image
-	bugcam *elements.BugCam
+	bugmap  *bugmap.Level
+	scratch *ebiten.Image //our pre-generated map, we don't update this
+	scene   *ebiten.Image //our updated scene, drawn overtop the pre-generated map
+	bugcam  *elements.BugCam
 
 	//scene elements
 	ground *ebiten.Image
 	wall   *ebiten.Image
 	bug    *elements.Bug
+	hand   *elements.Handy
 }
 
 func NewAsphodelScene(dimensions coordinates.Dimension) *AsphodelScene {
@@ -39,6 +41,7 @@ func NewAsphodelScene(dimensions coordinates.Dimension) *AsphodelScene {
 		loaded:     false,
 		bugcam:     elements.NewBugCam(),
 		bug:        elements.NewBug(),
+		hand:       elements.NewHandy(),
 	}
 
 	asphodel.bugcam.SetParams(definitions.Paramecas{
@@ -62,6 +65,8 @@ func NewAsphodelScene(dimensions coordinates.Dimension) *AsphodelScene {
 
 	asphodel.bug.SetLocation(coordinates.Vector{X: 6, Y: 3})
 	asphodel.bug.SetTargetLocation(coordinates.Vector{X: 6, Y: 3})
+
+	asphodel.hand.ForceAllPositionsGrid(coordinates.Vector{X: 8, Y: 3})
 	return asphodel
 }
 
@@ -72,23 +77,31 @@ func (scene *AsphodelScene) Draw(img *ebiten.Image) {
 	op := &ebiten.DrawImageOptions{}
 	//op.GeoM.Scale(2, 2)
 
-	paramecas := scene.bugcam.GetParams()
+	//draw the npc
+	scene.scene.Clear()
+	scene.scene.DrawImage(scene.scratch, nil)
+	npcloc := scene.hand.GetLoc64()
+	op.GeoM.Reset()
+	op.GeoM.Translate(npcloc.X, npcloc.Y)
+	scene.scene.DrawImage(scene.hand.Sprite, op)
 
+	//draw visible scene portion based on camera settings
+	paramecas := scene.bugcam.GetParams()
 	mx := paramecas.Location.X
 	my := paramecas.Location.Y
 	sx := paramecas.Scale.X
 	sy := paramecas.Scale.Y
-
+	op.GeoM.Reset()
 	op.GeoM.Scale(sx, sy)
 	op.GeoM.Translate(-float64(mx), -float64(my))
-
 	img.DrawImage(scene.scene, op)
 
-	//todo: retrieve bug position from location, decouple from camera
+	//draw the bug
 	op.GeoM.Reset()
 	op.GeoM.Scale(constants.Scale, constants.Scale)
 	op.GeoM.Translate(constants.Scale*constants.BugWidth*6, constants.Scale*constants.BugHeight*3)
 	img.DrawImage(scene.bug.Sprite, op)
+
 }
 
 func (scene *AsphodelScene) Update() error {
@@ -97,7 +110,10 @@ func (scene *AsphodelScene) Update() error {
 
 	if scene.tick%7 == 0 {
 		scene.bug.Animate()
+		scene.hand.Animate()
+
 	}
+	scene.hand.CloseTargets()
 
 	scene.tick++
 	return nil
@@ -129,6 +145,7 @@ func (scene *AsphodelScene) Load() {
 	}
 
 	scene.scene = ebiten.NewImage(scenedimensions.Width, scenedimensions.Height)
+	scene.scratch = ebiten.NewImage(scenedimensions.Width, scenedimensions.Height)
 	scene.ground = ebiten.NewImage(32, 32)
 	scene.wall = ebiten.NewImage(32, 32)
 	scene.ground.Fill(fx.HexToRGBA(0x44FF44, 0xFF))
@@ -201,7 +218,7 @@ func (scene *AsphodelScene) GenerateMap() {
 
 			op.GeoM.Reset()
 			op.GeoM.Translate(ox, oy)
-			scene.scene.DrawImage(srcimg, op)
+			scene.scratch.DrawImage(srcimg, op)
 		}
 	}
 }
@@ -234,6 +251,7 @@ func (scene *AsphodelScene) handleInputs() {
 	if update {
 		scene.bugcam.SetParams(params)
 	}
+
 }
 
 func (scene *AsphodelScene) handleInputs2() {
@@ -336,5 +354,9 @@ func (scene *AsphodelScene) handleInputs2() {
 			scene.bug.SetTargetLocation(newpos)
 			scene.bugcam.SetParams(params)
 		}
+	}
+
+	if inpututil.IsKeyJustPressed(ebiten.KeyM) {
+		scene.hand.GenWaypoints()
 	}
 }
