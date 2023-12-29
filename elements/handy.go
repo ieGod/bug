@@ -121,8 +121,8 @@ func (elem *Handy) CloseTargets() {
 	if dist > 1 {
 		angle := math.Atan2(dy, dx)
 
-		xadjust := dist * math.Cos(angle) / 8
-		yadjust := dist * math.Sin(angle) / 8
+		xadjust := dist * math.Cos(angle) / 4
+		yadjust := dist * math.Sin(angle) / 4
 
 		elem.loc64.X += xadjust
 		elem.loc64.Y += yadjust
