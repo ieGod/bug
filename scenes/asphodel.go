@@ -114,7 +114,7 @@ func (scene *AsphodelScene) Draw(img *ebiten.Image) {
 	img.DrawImage(scene.mcscratch.SubImage(image.Rect(ox, oy, ox1, oy1)).(*ebiten.Image), op)
 
 	//glitch cooldown indicator
-	vector.DrawFilledRect(img, 1280-120, 720-60, 100, 35, fx.HexToRGBA(0x4c2f49, 0xff), true)
+	vector.DrawFilledRect(img, 1280-130, 720-60, 115, 35, fx.HexToRGBA(0x4c2f49, 0xff), true)
 	var gclr color.RGBA
 	var gtxt string = "GLITCH!"
 	if scene.canglitch {
@@ -124,10 +124,10 @@ func (scene *AsphodelScene) Draw(img *ebiten.Image) {
 		gtxt = fmt.Sprintf("GLITCH %d", scene.glitchcooldown/60+1)
 	}
 
-	text.Draw(img, gtxt, fonts.Bugger.Glitch, 1280-103, 720-35, gclr)
+	text.Draw(img, gtxt, fonts.Bugger.Arcade, 1280-120, 720-36, gclr)
 
 	if scene.gameover {
-		text.Draw(img, "GAME OVER F5 TO RESTART", fonts.Bugger.GlitchBig, 350, 325, color.White)
+		text.Draw(img, "GAME OVER F5 TO RESTART", fonts.Bugger.ArcadeLarge, 175, 325, color.White)
 	}
 }
 

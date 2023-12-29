@@ -13,16 +13,21 @@ import (
 )
 
 type BugFont struct {
-	Standard  font.Face
-	Large     font.Face
-	Glitch    font.Face
-	GlitchBig font.Face
+	Standard    font.Face
+	Large       font.Face
+	Glitch      font.Face
+	GlitchBig   font.Face
+	Arcade      font.Face
+	ArcadeLarge font.Face
 }
 
 var (
 
 	//go:embed agencyb.ttf
 	agency_ttf []byte
+
+	//go:embed arcade_n.ttf
+	arcade_ttf []byte
 
 	Bugger BugFont
 )
@@ -62,4 +67,8 @@ func init() {
 	fnt2 := LoadFontFatal(agency_ttf)
 	Bugger.Glitch = GetFaceFatal(fnt2, constants.DPI, constants.FontSizeLarge)
 	Bugger.GlitchBig = GetFaceFatal(fnt2, constants.DPI, constants.FontSizeBig)
+
+	fnt3 := LoadFontFatal(arcade_ttf)
+	Bugger.Arcade = GetFaceFatal(fnt3, constants.DPI, constants.FontSizeArcade)
+	Bugger.ArcadeLarge = GetFaceFatal(fnt3, constants.DPI, constants.FontSizeArcadeBig)
 }
