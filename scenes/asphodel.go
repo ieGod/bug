@@ -6,17 +6,20 @@ import (
 	"bug/coordinates"
 	"bug/definitions"
 	"bug/elements"
+	"bug/fonts"
 	"bug/fx"
 	"bug/resources/images"
 	"encoding/json"
 	"fmt"
 	"image"
+	"image/color"
 	"log"
 	"math/rand"
 	"os"
 
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/hajimehoshi/ebiten/v2/inpututil"
+	"github.com/hajimehoshi/ebiten/v2/text"
 	"github.com/hajimehoshi/ebiten/v2/vector"
 )
 
@@ -37,15 +40,23 @@ type AsphodelScene struct {
 	wall   *ebiten.Image
 	bug    *elements.Bug
 	hand   *elements.Handy
+
+	//logical states
+	canglitch      bool
+	glitching      bool
+	glitchcooldown int
 }
 
 func NewAsphodelScene(dimensions coordinates.Dimension) *AsphodelScene {
 	asphodel := &AsphodelScene{
-		dimensions: dimensions,
-		loaded:     false,
-		bugcam:     elements.NewBugCam(),
-		bug:        elements.NewBug(),
-		hand:       elements.NewHandy(),
+		dimensions:     dimensions,
+		loaded:         false,
+		bugcam:         elements.NewBugCam(),
+		bug:            elements.NewBug(),
+		hand:           elements.NewHandy(),
+		canglitch:      true,
+		glitching:      false,
+		glitchcooldown: 0,
 	}
 
 	asphodel.bugcam.SetParams(definitions.Paramecas{
@@ -123,6 +134,15 @@ func (scene *AsphodelScene) Draw(img *ebiten.Image) {
 	vector.DrawFilledRect(img, 45, 45, 234, 170, fx.HexToRGBA(0x4c2f49, 0xff), true)
 	img.DrawImage(scene.mcscratch.SubImage(image.Rect(ox, oy, ox1, oy1)).(*ebiten.Image), op)
 
+	//glitch cooldown indicator
+	vector.DrawFilledRect(img, 1280-120, 720-60, 100, 35, fx.HexToRGBA(0x4c2f49, 0xff), true)
+	var gclr color.RGBA
+	if scene.canglitch {
+		gclr = fx.HexToRGBA(0x00ff84, 0xff)
+	} else {
+		gclr = fx.HexToRGBA(0x888888, 0xff)
+	}
+	text.Draw(img, "GLITCH!", fonts.Bugger.Glitch, 1280-103, 720-35, gclr)
 }
 
 func (scene *AsphodelScene) Update() error {
@@ -139,6 +159,12 @@ func (scene *AsphodelScene) Update() error {
 	//have maurice re-initiate target acquisition every 2 seconds
 	if scene.tick%30 == 0 {
 		scene.ChasePlayer()
+	}
+
+	if scene.glitchcooldown > 0 {
+		scene.glitchcooldown -= 1
+	} else {
+		scene.canglitch = true
 	}
 
 	scene.tick++
@@ -354,13 +380,21 @@ func (scene *AsphodelScene) handleInputs() {
 
 	//GLITCH TIME
 	if ebiten.IsKeyPressed(ebiten.KeyF) {
-		direction := coordinates.Direction{
-			Straight: true,
-			Right:    false,
-			Forward:  false,
+
+		if scene.canglitch && scene.glitchcooldown == 0 {
+			direction := coordinates.Direction{
+				Straight: true,
+				Right:    false,
+				Forward:  false,
+			}
+			newpos.X = newpos.X + 1 //constants.BugSpeed
+			scene.bug.SetRole(definitions.BugActionGlitch, direction)
+
+			scene.glitchcooldown = 60 * 5 //5 second cooldown
+			scene.canglitch = false
+			scene.glitching = true
 		}
-		newpos.X = newpos.X + 1 //constants.BugSpeed
-		scene.bug.SetRole(definitions.BugActionGlitch, direction)
+
 	}
 
 	if inpututil.IsKeyJustReleased(ebiten.KeyW) ||
@@ -391,6 +425,7 @@ func (scene *AsphodelScene) handleInputs() {
 			scene.bug.SetLocation(newpos)
 			scene.bug.SetTargetLocation(newpos)
 			scene.bugcam.SetParams(params)
+			scene.glitching = false
 		}
 	}
 
