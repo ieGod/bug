@@ -137,12 +137,15 @@ func (scene *AsphodelScene) Draw(img *ebiten.Image) {
 	//glitch cooldown indicator
 	vector.DrawFilledRect(img, 1280-120, 720-60, 100, 35, fx.HexToRGBA(0x4c2f49, 0xff), true)
 	var gclr color.RGBA
+	var gtxt string = "GLITCH!"
 	if scene.canglitch {
 		gclr = fx.HexToRGBA(0x00ff84, 0xff)
 	} else {
 		gclr = fx.HexToRGBA(0x888888, 0xff)
+		gtxt = fmt.Sprintf("GLITCH %d", scene.glitchcooldown/60+1)
 	}
-	text.Draw(img, "GLITCH!", fonts.Bugger.Glitch, 1280-103, 720-35, gclr)
+
+	text.Draw(img, gtxt, fonts.Bugger.Glitch, 1280-103, 720-35, gclr)
 }
 
 func (scene *AsphodelScene) Update() error {
@@ -159,6 +162,12 @@ func (scene *AsphodelScene) Update() error {
 	//have maurice re-initiate target acquisition every 2 seconds
 	if scene.tick%30 == 0 {
 		scene.ChasePlayer()
+	}
+
+	if scene.glitchcooldown/60 < 5 && scene.glitching {
+		scene.SetBugIdle()
+		scene.glitching = false
+
 	}
 
 	if scene.glitchcooldown > 0 {
@@ -390,7 +399,7 @@ func (scene *AsphodelScene) handleInputs() {
 			newpos.X = newpos.X + 1 //constants.BugSpeed
 			scene.bug.SetRole(definitions.BugActionGlitch, direction)
 
-			scene.glitchcooldown = 60 * 5 //5 second cooldown
+			scene.glitchcooldown = 60 * 10 //5 second cooldown
 			scene.canglitch = false
 			scene.glitching = true
 		}
@@ -405,12 +414,7 @@ func (scene *AsphodelScene) handleInputs() {
 		inpututil.IsKeyJustReleased(ebiten.KeyArrowLeft) ||
 		inpututil.IsKeyJustReleased(ebiten.KeyArrowDown) ||
 		inpututil.IsKeyJustReleased(ebiten.KeyArrowRight) {
-		direction := coordinates.Direction{
-			Straight: true,
-			Right:    false,
-			Forward:  true,
-		}
-		scene.bug.SetRole(definitions.BugActionIdle, direction)
+		scene.SetBugIdle()
 	}
 
 	if update {
@@ -439,6 +443,7 @@ func (scene *AsphodelScene) handleInputs() {
 
 // we're going to use a* to find a path from the npc to the player
 func (scene *AsphodelScene) ChasePlayer() {
+
 	var waypoints []coordinates.Vector
 
 	//find gidxs for the npc and player
@@ -447,8 +452,18 @@ func (scene *AsphodelScene) ChasePlayer() {
 	start := scene.bugmap.Nodes[gidx0]
 
 	bugloc := scene.bug.GetLocation()
-	gidx1 := bugloc.Y*scene.bugmap.Dimensions.Width + bugloc.X
-	goal := scene.bugmap.Nodes[gidx1]
+	var gidx1 int
+	var goal *bugmap.BugNode
+
+	if scene.glitching {
+		gidx1 = 2*scene.bugmap.Dimensions.Width + 2
+		goal = scene.bugmap.Nodes[gidx1]
+
+	} else {
+		gidx1 = bugloc.Y*scene.bugmap.Dimensions.Width + bugloc.X
+		goal = scene.bugmap.Nodes[gidx1]
+
+	}
 
 	wp := bugmap.AStar(start, goal, scene.bugmap)
 
@@ -459,4 +474,13 @@ func (scene *AsphodelScene) ChasePlayer() {
 	}
 
 	scene.hand.SetWaypoints(waypoints)
+}
+
+func (scene *AsphodelScene) SetBugIdle() {
+	direction := coordinates.Direction{
+		Straight: true,
+		Right:    false,
+		Forward:  true,
+	}
+	scene.bug.SetRole(definitions.BugActionIdle, direction)
 }
