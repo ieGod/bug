@@ -81,7 +81,7 @@ func NewAsphodelScene(dimensions coordinates.Dimension) *AsphodelScene {
 	asphodel.bug.SetLocation(coordinates.Vector{X: 6, Y: 3})
 	asphodel.bug.SetTargetLocation(coordinates.Vector{X: 6, Y: 3})
 
-	asphodel.hand.ForceAllPositionsGrid(coordinates.Vector{X: 8, Y: 3})
+	asphodel.hand.ForceAllPositionsGrid(coordinates.Vector{X: 94, Y: 3})
 	return asphodel
 }
 
