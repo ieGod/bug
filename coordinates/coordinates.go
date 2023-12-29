@@ -22,3 +22,15 @@ type Direction struct {
 	Right    bool
 	Forward  bool
 }
+
+func (v Vector) GetManhattanDist(target Vector) int {
+	deltax := target.X - v.X
+	deltay := target.Y - v.Y
+	if deltax < 0 {
+		deltax = -deltax
+	}
+	if deltay < 0 {
+		deltay = -deltay
+	}
+	return deltax + deltay
+}

@@ -21,6 +21,7 @@ const (
 	IMGBLOOD   BugAssetName = "BLOOD"
 	IMGSWATCAM BugAssetName = "SWATCAM"
 	IMGTILESET BugAssetName = "TILESET"
+	IMGMAURICE BugAssetName = "MAURICE"
 )
 
 var (
@@ -49,6 +50,9 @@ var (
 
 	//go:embed tileset.png
 	tileset_img []byte
+
+	//go:embed maurice.png
+	maurice_img []byte
 )
 
 func init() {
@@ -64,6 +68,7 @@ func LoadImageAssets() {
 	BugImages[IMGBLOOD] = LoadImagesFatal(blood_img)
 	BugImages[IMGSWATCAM] = LoadImagesFatal(swatcam_img)
 	BugImages[IMGTILESET] = LoadImagesFatal(tileset_img)
+	BugImages[IMGMAURICE] = LoadImagesFatal(maurice_img)
 
 }
 

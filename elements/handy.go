@@ -49,8 +49,10 @@ func (elem *Handy) Animate() {
 		op.GeoM.Scale(-1, 1)
 		op.GeoM.Translate(constants.BugWidth, 0)
 	}
+
 	elem.Sprite.DrawImage(images.BugImages[images.IMGSHADOW], op)
-	elem.Sprite.DrawImage(images.BugImages[images.IMGBUG].SubImage(image.Rect(ox, oy, ox+constants.BugWidth, oy+constants.BugHeight)).(*ebiten.Image), op)
+	//elem.Sprite.DrawImage(images.BugImages[images.IMGBUG].SubImage(image.Rect(ox, oy, ox+constants.BugWidth, oy+constants.BugHeight)).(*ebiten.Image), op)
+	elem.Sprite.DrawImage(images.BugImages[images.IMGMAURICE].SubImage(image.Rect(ox, oy, ox+constants.BugWidth, oy+constants.BugHeight)).(*ebiten.Image), op)
 	elem.cycle++
 }
 
@@ -116,15 +118,32 @@ func (elem *Handy) CloseTargets() {
 
 	dist := math.Sqrt(dx*dx + dy*dy)
 
-	if dist > 0.5 {
+	if dist > 1 {
 		angle := math.Atan2(dy, dx)
 
-		xadjust := dist * math.Cos(angle) / 16
-		yadjust := dist * math.Sin(angle) / 16
+		xadjust := dist * math.Cos(angle) / 8
+		yadjust := dist * math.Sin(angle) / 8
 
 		elem.loc64.X += xadjust
 		elem.loc64.Y += yadjust
 		elem.location = elem.targetlocation
+
+		direction := coordinates.Direction{
+			Straight: dx < 16,
+			Right:    dx > 0.5,
+			Forward:  dy > 0.5,
+		}
+
+		if direction.Straight {
+			elem.SetRole(definitions.BugActionForwardRun, direction)
+		}
+		if direction.Right {
+			elem.SetRole(definitions.BugActionSideRun, direction)
+		}
+		if !direction.Forward {
+			elem.SetRole(definitions.BugActionReverseRun, direction)
+		}
+
 	} else {
 		if len(elem.waypoints) > 0 {
 			elem.targetlocation = elem.waypoints[0]
@@ -132,7 +151,15 @@ func (elem *Handy) CloseTargets() {
 
 			elem.targetloc64.X = float64(elem.targetlocation.X * constants.BugWidth)
 			elem.targetloc64.Y = float64(elem.targetlocation.Y * constants.BugHeight)
+		}
 
+		if len(elem.waypoints) == 0 {
+			direction := coordinates.Direction{
+				Straight: true,
+				Right:    false,
+				Forward:  false,
+			}
+			elem.SetRole(definitions.BugActionIdle, direction)
 		}
 	}
 }
@@ -167,4 +194,9 @@ func (elem *Handy) GenWaypoints() {
 	elem.targetloc64.X = float64(elem.waypoints[0].X * constants.BugWidth)
 	elem.targetloc64.Y = float64(elem.waypoints[0].Y * constants.BugHeight)
 
+}
+
+func (elem *Handy) SetWaypoints(path []coordinates.Vector) {
+	elem.waypoints = elem.waypoints[:0]
+	elem.waypoints = append(elem.waypoints, path...)
 }

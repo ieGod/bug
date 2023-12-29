@@ -9,6 +9,7 @@ import (
 	"bug/fx"
 	"bug/resources/images"
 	"encoding/json"
+	"fmt"
 	"image"
 	"log"
 	"math/rand"
@@ -16,6 +17,7 @@ import (
 
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/hajimehoshi/ebiten/v2/inpututil"
+	"github.com/hajimehoshi/ebiten/v2/vector"
 )
 
 type AsphodelScene struct {
@@ -108,7 +110,7 @@ func (scene *AsphodelScene) Draw(img *ebiten.Image) {
 	//clone the scene onto our maurice cam scratchpad and add the player bug
 	scene.mcscratch.DrawImage(scene.scene, nil)
 	op.GeoM.Reset()
-	op.GeoM.Translate(mx/2+constants.BugWidth*6, my/2+constants.BugHeight*3)
+	op.GeoM.Translate(mx/constants.CameraScale+constants.BugWidth*6, my/constants.CameraScale+constants.BugHeight*3)
 	scene.mcscratch.DrawImage(scene.bug.Sprite, op)
 
 	//draw MauriceCam™
@@ -118,12 +120,13 @@ func (scene *AsphodelScene) Draw(img *ebiten.Image) {
 	oy1 := oy + constants.BugHeight*5
 	op.GeoM.Reset()
 	op.GeoM.Translate(50, 50)
+	vector.DrawFilledRect(img, 45, 45, 234, 170, fx.HexToRGBA(0x4c2f49, 0xff), true)
 	img.DrawImage(scene.mcscratch.SubImage(image.Rect(ox, oy, ox1, oy1)).(*ebiten.Image), op)
 
 }
 
 func (scene *AsphodelScene) Update() error {
-	scene.handleInputs2()
+	scene.handleInputs()
 	scene.bugcam.CloseTargets()
 
 	if scene.tick%7 == 0 {
@@ -251,6 +254,7 @@ func (scene *AsphodelScene) GenerateMap() {
 	}
 }
 
+/*
 func (scene *AsphodelScene) handleInputs() {
 
 	var update bool = false
@@ -281,8 +285,9 @@ func (scene *AsphodelScene) handleInputs() {
 	}
 
 }
+*/
 
-func (scene *AsphodelScene) handleInputs2() {
+func (scene *AsphodelScene) handleInputs() {
 
 	var newpos coordinates.Vector = scene.bug.GetLocation()
 
@@ -387,4 +392,31 @@ func (scene *AsphodelScene) handleInputs2() {
 	if inpututil.IsKeyJustPressed(ebiten.KeyM) {
 		scene.hand.GenWaypoints()
 	}
+	if inpututil.IsKeyJustPressed(ebiten.KeyN) {
+		scene.ChasePlayer()
+	}
+}
+
+// we're going to use a* to find a path from the npc to the player
+func (scene *AsphodelScene) ChasePlayer() {
+	var waypoints []coordinates.Vector
+
+	//find gidxs for the npc and player
+	npcloc := scene.hand.GetLocation()
+	gidx0 := npcloc.Y*scene.bugmap.Dimensions.Width + npcloc.X
+	start := scene.bugmap.Nodes[gidx0]
+
+	bugloc := scene.bug.GetLocation()
+	gidx1 := bugloc.Y*scene.bugmap.Dimensions.Width + bugloc.X
+	goal := scene.bugmap.Nodes[gidx1]
+
+	wp := bugmap.AStar(start, goal, scene.bugmap)
+
+	fmt.Println(wp)
+
+	for _, point := range wp {
+		waypoints = append(waypoints, point.Location)
+	}
+
+	scene.hand.SetWaypoints(waypoints)
 }
