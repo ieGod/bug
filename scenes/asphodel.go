@@ -9,18 +9,23 @@ import (
 	"bug/fonts"
 	"bug/fx"
 	"bug/resources/images"
+	_ "embed"
 	"encoding/json"
 	"fmt"
 	"image"
 	"image/color"
 	"log"
 	"math/rand"
-	"os"
 
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/hajimehoshi/ebiten/v2/inpututil"
 	"github.com/hajimehoshi/ebiten/v2/text"
 	"github.com/hajimehoshi/ebiten/v2/vector"
+)
+
+var (
+	//go:embed asphodel.json
+	mapjson []byte
 )
 
 type AsphodelScene struct {
@@ -180,22 +185,14 @@ func (scene *AsphodelScene) Load() {
 	//load up and generate map but only if we haven't already, otherwise
 	//we can just reset the scene's logical states
 	if !scene.loaded {
-		path := "bugmap.json"
+		//path := "bugmap.json"
 
 		scene.bugmap = &bugmap.Level{}
 
-		//check file exists, load, deserialize
-		_, err = os.Stat(path)
-		if err == nil {
-			rawbytes, err := os.ReadFile(path)
+		err = json.Unmarshal(mapjson, scene.bugmap)
 
-			if err == nil {
-				err = json.Unmarshal(rawbytes, scene.bugmap)
-			}
-
-			if err != nil {
-				log.Fatal("invalid map.")
-			}
+		if err != nil {
+			log.Fatal("invalid map.")
 		}
 
 		scenedimensions := coordinates.Dimension{

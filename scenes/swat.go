@@ -24,6 +24,7 @@ type SwatScene struct {
 	tick       int
 
 	//scene elements
+	fader        *elements.Fader
 	splatmask    *ebiten.Image
 	collidermask *ebiten.Image
 	bug          *elements.Bug
@@ -39,6 +40,7 @@ func NewSwatScene(dimensions coordinates.Dimension) *SwatScene {
 		swatter:      elements.NewSplat(),
 		splatmask:    ebiten.NewImage(constants.SwatWidth+96*2, constants.SwatHeight+96*2),
 		collidermask: ebiten.NewImage(constants.BugWidth*3, constants.BugHeight*3),
+		fader:        elements.NewFader(dimensions, definitions.FadeTypeIn, fx.HexToRGBA(0xFFFFFF, 0xff), 4*60),
 		cycle:        0,
 		tick:         0,
 		loaded:       false,
@@ -67,8 +69,12 @@ func (scene *SwatScene) Draw(img *ebiten.Image) {
 		} else if scene.bugcollision && scene.whack || scene.gameover {
 			scene.gameover = true
 			text.Draw(img, constants.Strings.Splat, fonts.Bugger.Arcade, 1280-150, 150, color.White)
-
 		}
+	}
+
+	if scene.gameover {
+		img.DrawImage(scene.fader.Sprite, nil)
+		text.Draw(img, "VILE SCUM, SUFFER ETERNITY AS YOUR PREY", fonts.Bugger.Arcade, 500, 300, color.Black)
 	}
 
 	scene.cycle++
@@ -81,6 +87,12 @@ func (scene *SwatScene) Update() error {
 
 		if scene.tick%7 == 0 {
 			scene.bug.Animate()
+		}
+	} else {
+
+		scene.fader.Animate()
+		if scene.fader.IsComplete() {
+			scene.complete = true
 		}
 	}
 
