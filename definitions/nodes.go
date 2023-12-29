@@ -3,14 +3,16 @@ package definitions
 type NodeType int
 
 const (
-	NodeTypeGround NodeType = iota
+	NodeTypeBlank NodeType = iota
+	NodeTypeGround
 	NodeTypeWall
 )
 
 type NodeTile int
 
 const (
-	NodeTileGround NodeTile = iota
+	NodeTileBlank NodeTile = iota
+	NodeTileGround
 	NodeTileWallTop
 	NodeTileWallTopLeft
 	NodeTileWallLeft
@@ -19,4 +21,6 @@ const (
 	NodeTileWallBottomRight
 	NodeTileWallRight
 	NodeTileWallTopRight
+	NodeTileInsideTopLeft
+	NodeTileInsideTopRight
 )
