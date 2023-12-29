@@ -4,6 +4,8 @@ import (
 	"bug/constants"
 	"log"
 
+	_ "embed"
+
 	"github.com/hajimehoshi/ebiten/examples/resources/fonts"
 	"golang.org/x/image/font"
 	"golang.org/x/image/font/opentype"
@@ -13,14 +15,19 @@ import (
 type BugFont struct {
 	Standard font.Face
 	Large    font.Face
+	Glitch   font.Face
 }
 
 var (
+
+	//go:embed agencyb.ttf
+	agency_ttf []byte
+
 	Bugger BugFont
 )
 
 func LoadFontFatal(src []byte) *sfnt.Font {
-	tt, err := opentype.Parse(fonts.MPlus1pRegular_ttf)
+	tt, err := opentype.Parse(src)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -50,4 +57,7 @@ func init() {
 	fnt := LoadFontFatal(fonts.MPlus1pRegular_ttf)
 	Bugger.Standard = GetFaceFatal(fnt, constants.DPI, constants.FontSizeStandard)
 	Bugger.Large = GetFaceFatal(fnt, constants.DPI, constants.FontSizeLarge)
+
+	fnt2 := LoadFontFatal(agency_ttf)
+	Bugger.Glitch = GetFaceFatal(fnt2, constants.DPI, constants.FontSizeLarge)
 }
