@@ -99,7 +99,7 @@ func (scene *AsphodelScene) Draw(img *ebiten.Image) {
 	//draw the bug
 	op.GeoM.Reset()
 	op.GeoM.Scale(constants.CameraScale, constants.CameraScale)
-	op.GeoM.Translate(constants.CameraScale*constants.BugWidth*6, constants.CameraScale*constants.BugHeight*3)
+	op.GeoM.Translate(constants.CameraScale*constants.BugWidth*8, constants.CameraScale*constants.BugHeight*4)
 	img.DrawImage(scene.bug.Sprite, op)
 
 	//clone the scene onto our maurice cam scratchpad and add the player bug
@@ -230,8 +230,8 @@ func (scene *AsphodelScene) Load() {
 		Easing: 8.,
 	})
 
-	scene.bug.SetLocation(coordinates.Vector{X: 6, Y: 3})
-	scene.bug.SetTargetLocation(coordinates.Vector{X: 6, Y: 3})
+	scene.bug.SetLocation(coordinates.Vector{X: 8, Y: 4})
+	scene.bug.SetTargetLocation(coordinates.Vector{X: 8, Y: 4})
 	scene.hand.ForceAllPositionsGrid(coordinates.Vector{X: 94, Y: 3})
 	scene.SetBugIdle()
 
