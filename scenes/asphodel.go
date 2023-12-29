@@ -136,6 +136,11 @@ func (scene *AsphodelScene) Update() error {
 	}
 	scene.hand.CloseTargets()
 
+	//have maurice re-initiate target acquisition every 2 seconds
+	if scene.tick%120 == 0 {
+		scene.ChasePlayer()
+	}
+
 	scene.tick++
 	return nil
 }
