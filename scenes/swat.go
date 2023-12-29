@@ -30,6 +30,7 @@ type SwatScene struct {
 	swatter      *elements.Splat
 	bugcollision bool //does our splat mask cover part of the bug?
 	whack        bool //are we now whacking?
+	gameover     bool //did we get hit?
 }
 
 func NewSwatScene(dimensions coordinates.Dimension) *SwatScene {
@@ -45,6 +46,7 @@ func NewSwatScene(dimensions coordinates.Dimension) *SwatScene {
 		dimensions:   dimensions,
 		bugcollision: false,
 		whack:        false,
+		gameover:     false,
 	}
 	return scene
 }
@@ -61,9 +63,10 @@ func (scene *SwatScene) Draw(img *ebiten.Image) {
 
 	if scene.bug.GetAction() != definitions.BugActionGlitch {
 		if scene.bugcollision && !scene.whack {
-			text.Draw(img, constants.Strings.Targeted, fonts.Bugger.Standard, 50, 150, color.White)
-		} else if scene.bugcollision && scene.whack {
-			text.Draw(img, constants.Strings.Splat, fonts.Bugger.Standard, 50, 150, color.White)
+			text.Draw(img, constants.Strings.Targeted, fonts.Bugger.Arcade, 1280-150, 150, color.White)
+		} else if scene.bugcollision && scene.whack || scene.gameover {
+			scene.gameover = true
+			text.Draw(img, constants.Strings.Splat, fonts.Bugger.Arcade, 1280-150, 150, color.White)
 
 		}
 	}
@@ -72,11 +75,16 @@ func (scene *SwatScene) Draw(img *ebiten.Image) {
 }
 
 func (scene *SwatScene) Update() error {
-	scene.handleInputs()
 
-	if scene.tick%7 == 0 {
-		scene.bug.Animate()
+	if !scene.gameover {
+		scene.handleBugInputs()
+
+		if scene.tick%7 == 0 {
+			scene.bug.Animate()
+		}
 	}
+
+	scene.handleOtherInputs()
 
 	scene.swatter.Animate()
 
@@ -102,11 +110,7 @@ func (scene *SwatScene) IsComplete() bool {
 	return scene.complete
 }
 
-func (scene *SwatScene) handleInputs() {
-
-	if inpututil.IsKeyJustPressed(ebiten.KeyQ) {
-		scene.complete = true
-	}
+func (scene *SwatScene) handleBugInputs() {
 
 	var newpos coordinates.Vector = scene.bug.GetLocation()
 
@@ -180,8 +184,15 @@ func (scene *SwatScene) handleInputs() {
 		scene.bug.SetRole(definitions.BugActionIdle, direction)
 	}
 
-	scene.whack = ebiten.IsMouseButtonPressed(ebiten.MouseButtonLeft)
+}
 
+func (scene *SwatScene) handleOtherInputs() {
+
+	if inpututil.IsKeyJustPressed(ebiten.KeyQ) {
+		scene.complete = true
+	}
+
+	scene.whack = ebiten.IsMouseButtonPressed(ebiten.MouseButtonLeft)
 	var mpos coordinates.Vector
 	mpos.X, mpos.Y = ebiten.CursorPosition()
 	scene.swatter.SetLocation(mpos)
@@ -258,7 +269,7 @@ func (scene *SwatScene) CheckCollisions() {
 
 func (scene *SwatScene) RenderSplat(img *ebiten.Image) {
 
-	if scene.bugcollision && scene.whack && scene.bug.GetAction() != definitions.BugActionGlitch {
+	if scene.bugcollision && scene.whack && scene.bug.GetAction() != definitions.BugActionGlitch || scene.gameover {
 		loc := scene.bug.GetLocation()
 
 		loc.X = loc.X - constants.BugWidth/2*3 - constants.SplatWidth/2
@@ -283,6 +294,8 @@ func (scene *SwatScene) RenderSwatCam(img *ebiten.Image) {
 	if (scene.tick/30)%2 == 0 {
 		vector.DrawFilledCircle(img, float32(ox+constants.OffsetSplatCamTopMargin), float32(oy+constants.OffsetSplatCamLeftMargin), 5, fx.HexToRGBA(0xFF0000, 0xFF), true)
 	}
+
+	text.Draw(img, "SWAT CAM", fonts.Bugger.Arcade, int(ox)+20, int(oy)+20, color.Black)
 
 	//include an inner margin before we draw the collider mask
 	if scene.bugcollision {

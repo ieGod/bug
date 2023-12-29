@@ -19,6 +19,7 @@ type BugFont struct {
 	GlitchBig   font.Face
 	Arcade      font.Face
 	ArcadeLarge font.Face
+	ArcadeHuge  font.Face
 }
 
 var (
@@ -71,4 +72,5 @@ func init() {
 	fnt3 := LoadFontFatal(arcade_ttf)
 	Bugger.Arcade = GetFaceFatal(fnt3, constants.DPI, constants.FontSizeArcade)
 	Bugger.ArcadeLarge = GetFaceFatal(fnt3, constants.DPI, constants.FontSizeArcadeBig)
+	Bugger.ArcadeHuge = GetFaceFatal(fnt3, constants.DPI, constants.FontSizeArcadeHuge)
 }

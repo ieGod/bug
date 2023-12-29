@@ -26,6 +26,6 @@ func init() {
 	Strings.SwatName = "swat"
 	Strings.AsphodelName = "asphodel"
 	Strings.PressEnter = "Press Enter to Play"
-	Strings.Targeted = "juicy boy in crosshairs"
-	Strings.Splat = "juicy boy go splat"
+	Strings.Targeted = "DANGER"
+	Strings.Splat = "SWATTED"
 }

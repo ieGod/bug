@@ -44,12 +44,14 @@ func (scene *IntroScene) Draw(img *ebiten.Image) {
 	img.Fill(fx.HexToRGBA(0x8c0002, 0xff))
 	op := &ebiten.DrawImageOptions{}
 	op.GeoM.Scale(5, 5)
-	op.GeoM.Translate(float64(scene.dimensions.Width/2-380), float64(scene.dimensions.Height/2-200))
+	op.GeoM.Translate(float64(scene.dimensions.Width/2-32*5/2), float64(scene.dimensions.Height/2-200))
 
 	//img.DrawImage(images.BugImages[images.IMGTITLE], op)
-
+	text.Draw(img, "B", fonts.Bugger.ArcadeHuge, 500, 250, color.White)
 	img.DrawImage(scene.bug.Sprite, op)
-	text.Draw(img, constants.Strings.PressEnter, fonts.Bugger.Standard, scene.dimensions.Width/2-200, scene.dimensions.Height/2+200, color.White)
+	text.Draw(img, "G", fonts.Bugger.ArcadeHuge, scene.dimensions.Width/2+32*5/2, 250, color.White)
+
+	text.Draw(img, constants.Strings.PressEnter, fonts.Bugger.Arcade, scene.dimensions.Width/2-100, scene.dimensions.Height/2+200, color.White)
 
 	scene.cycle++
 }
