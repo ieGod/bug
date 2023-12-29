@@ -175,7 +175,11 @@ func (elem *Handy) ForceAllPositionsGrid(loc coordinates.Vector) {
 	elem.targetloc64.X = float64(elem.targetlocation.X * constants.BugWidth)
 	elem.targetloc64.Y = float64(elem.targetlocation.Y * constants.BugHeight)
 
-	elem.waypoints[0] = loc
+	if len(elem.waypoints) == 0 {
+		elem.waypoints = append(elem.waypoints, loc)
+	} else {
+		elem.waypoints[0] = loc
+	}
 }
 
 func (elem *Handy) GenWaypoints() {

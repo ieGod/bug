@@ -44,6 +44,7 @@ type AsphodelScene struct {
 	//logical states
 	canglitch      bool
 	glitching      bool
+	gameover       bool
 	glitchcooldown int
 }
 
@@ -57,31 +58,9 @@ func NewAsphodelScene(dimensions coordinates.Dimension) *AsphodelScene {
 		canglitch:      true,
 		glitching:      false,
 		glitchcooldown: 0,
+		gameover:       false,
 	}
 
-	asphodel.bugcam.SetParams(definitions.Paramecas{
-		Location: coordinates.Vector64{
-			X: 0,
-			Y: 0,
-			Z: 0,
-		},
-		TargetLocation: coordinates.Vector64{
-			X: 0,
-			Y: 0,
-			Z: 0,
-		},
-		Scale: coordinates.Vector64{
-			X: constants.CameraScale,
-			Y: constants.CameraScale,
-			Z: 0,
-		},
-		Easing: 8.,
-	})
-
-	asphodel.bug.SetLocation(coordinates.Vector{X: 6, Y: 3})
-	asphodel.bug.SetTargetLocation(coordinates.Vector{X: 6, Y: 3})
-
-	asphodel.hand.ForceAllPositionsGrid(coordinates.Vector{X: 94, Y: 3})
 	return asphodel
 }
 
@@ -146,11 +125,26 @@ func (scene *AsphodelScene) Draw(img *ebiten.Image) {
 	}
 
 	text.Draw(img, gtxt, fonts.Bugger.Glitch, 1280-103, 720-35, gclr)
+
+	if scene.gameover {
+		text.Draw(img, "GAME OVER F5 TO RESTART", fonts.Bugger.GlitchBig, 350, 325, color.White)
+	}
 }
 
 func (scene *AsphodelScene) Update() error {
-	scene.handleInputs()
+	if !scene.gameover {
+		scene.handleInputs()
+	}
+
+	if inpututil.IsKeyJustPressed(ebiten.KeyF5) {
+		scene.Load()
+	}
+
 	scene.bugcam.CloseTargets()
+
+	if scene.hand.GetLocation().GetManhattanDist(scene.bug.GetLocation()) == 0 && !scene.glitching {
+		scene.gameover = true
+	}
 
 	if scene.tick%7 == 0 {
 		scene.bug.Animate()
@@ -159,7 +153,7 @@ func (scene *AsphodelScene) Update() error {
 	}
 	scene.hand.CloseTargets()
 
-	//have maurice re-initiate target acquisition every 2 seconds
+	//have maurice re-initiate target acquisition periodically, and often >:]
 	if scene.tick%30 == 0 {
 		scene.ChasePlayer()
 	}
@@ -182,38 +176,72 @@ func (scene *AsphodelScene) Update() error {
 
 func (scene *AsphodelScene) Load() {
 	var err error
-	path := "bugmap.json"
 
-	scene.bugmap = &bugmap.Level{}
+	//load up and generate map but only if we haven't already, otherwise
+	//we can just reset the scene's logical states
+	if !scene.loaded {
+		path := "bugmap.json"
 
-	//check file exists, load, deserialize
-	_, err = os.Stat(path)
-	if err == nil {
-		rawbytes, err := os.ReadFile(path)
+		scene.bugmap = &bugmap.Level{}
 
+		//check file exists, load, deserialize
+		_, err = os.Stat(path)
 		if err == nil {
-			err = json.Unmarshal(rawbytes, scene.bugmap)
+			rawbytes, err := os.ReadFile(path)
+
+			if err == nil {
+				err = json.Unmarshal(rawbytes, scene.bugmap)
+			}
+
+			if err != nil {
+				log.Fatal("invalid map.")
+			}
 		}
 
-		if err != nil {
-			log.Fatal("invalid map.")
+		scenedimensions := coordinates.Dimension{
+			Width:  scene.bugmap.Dimensions.Width * constants.BugWidth,
+			Height: scene.bugmap.Dimensions.Height * constants.BugHeight,
 		}
+
+		scene.scene = ebiten.NewImage(scenedimensions.Width, scenedimensions.Height)
+		scene.scratch = ebiten.NewImage(scenedimensions.Width, scenedimensions.Height)
+		scene.mcscratch = ebiten.NewImage(scenedimensions.Width, scenedimensions.Height)
+		scene.ground = ebiten.NewImage(32, 32)
+		scene.wall = ebiten.NewImage(32, 32)
+		scene.ground.Fill(fx.HexToRGBA(0x44FF44, 0xFF))
+		scene.wall.Fill(fx.HexToRGBA(0x000044, 0xFF))
+
+		scene.GenerateMap()
 	}
 
-	scenedimensions := coordinates.Dimension{
-		Width:  scene.bugmap.Dimensions.Width * constants.BugWidth,
-		Height: scene.bugmap.Dimensions.Height * constants.BugHeight,
-	}
+	scene.bugcam.SetParams(definitions.Paramecas{
+		Location: coordinates.Vector64{
+			X: 0,
+			Y: 0,
+			Z: 0,
+		},
+		TargetLocation: coordinates.Vector64{
+			X: 0,
+			Y: 0,
+			Z: 0,
+		},
+		Scale: coordinates.Vector64{
+			X: constants.CameraScale,
+			Y: constants.CameraScale,
+			Z: 0,
+		},
+		Easing: 8.,
+	})
 
-	scene.scene = ebiten.NewImage(scenedimensions.Width, scenedimensions.Height)
-	scene.scratch = ebiten.NewImage(scenedimensions.Width, scenedimensions.Height)
-	scene.mcscratch = ebiten.NewImage(scenedimensions.Width, scenedimensions.Height)
-	scene.ground = ebiten.NewImage(32, 32)
-	scene.wall = ebiten.NewImage(32, 32)
-	scene.ground.Fill(fx.HexToRGBA(0x44FF44, 0xFF))
-	scene.wall.Fill(fx.HexToRGBA(0x000044, 0xFF))
+	scene.bug.SetLocation(coordinates.Vector{X: 6, Y: 3})
+	scene.bug.SetTargetLocation(coordinates.Vector{X: 6, Y: 3})
+	scene.hand.ForceAllPositionsGrid(coordinates.Vector{X: 94, Y: 3})
+	scene.SetBugIdle()
 
-	scene.GenerateMap()
+	scene.canglitch = true
+	scene.glitching = false
+	scene.glitchcooldown = 0
+	scene.gameover = false
 
 	scene.loaded = true
 
@@ -467,7 +495,7 @@ func (scene *AsphodelScene) ChasePlayer() {
 
 	wp := bugmap.AStar(start, goal, scene.bugmap)
 
-	fmt.Println(wp)
+	//fmt.Println(wp)
 
 	for _, point := range wp {
 		waypoints = append(waypoints, point.Location)

@@ -13,9 +13,10 @@ import (
 )
 
 type BugFont struct {
-	Standard font.Face
-	Large    font.Face
-	Glitch   font.Face
+	Standard  font.Face
+	Large     font.Face
+	Glitch    font.Face
+	GlitchBig font.Face
 }
 
 var (
@@ -60,4 +61,5 @@ func init() {
 
 	fnt2 := LoadFontFatal(agency_ttf)
 	Bugger.Glitch = GetFaceFatal(fnt2, constants.DPI, constants.FontSizeLarge)
+	Bugger.GlitchBig = GetFaceFatal(fnt2, constants.DPI, constants.FontSizeBig)
 }
