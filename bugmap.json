@@ -1,7 +1,7 @@
 {
   "Dimensions": {
     "Width": 100,
-    "Height": 34
+    "Height": 47
   },
   "Nodes": [
     {
@@ -16351,7 +16351,7 @@
         "Z": 1
       },
       "Nodetype": 2,
-      "Nodetile": 6
+      "Nodetile": 10
     },
     {
       "Location": {
@@ -16359,8 +16359,8 @@
         "Y": 19,
         "Z": 1
       },
-      "Nodetype": 2,
-      "Nodetile": 6
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
@@ -16369,7 +16369,7 @@
         "Z": 1
       },
       "Nodetype": 2,
-      "Nodetile": 6
+      "Nodetile": 11
     },
     {
       "Location": {
@@ -17164,22 +17164,28 @@
       "Location": {
         "X": 10,
         "Y": 20,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 11,
         "Y": 20,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 12,
         "Y": 20,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -17930,22 +17936,28 @@
       "Location": {
         "X": 10,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 11,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 12,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -18690,22 +18702,28 @@
       "Location": {
         "X": 10,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 11,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 12,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -19450,22 +19468,28 @@
       "Location": {
         "X": 10,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 11,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 12,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -20216,22 +20240,28 @@
       "Location": {
         "X": 10,
         "Y": 24,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 11,
         "Y": 24,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 12,
         "Y": 24,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -20982,22 +21012,28 @@
       "Location": {
         "X": 10,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 11,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 12,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -21387,197 +21423,253 @@
       "Location": {
         "X": 61,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 0
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 62,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 63,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 64,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 65,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 66,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 67,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 68,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 69,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 70,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 71,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 72,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 73,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 74,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 75,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 76,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 77,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 78,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 79,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 80,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 81,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 82,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 83,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 84,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 85,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 86,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 87,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 88,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
@@ -21586,7 +21678,7 @@
         "Z": 1
       },
       "Nodetype": 2,
-      "Nodetile": 4
+      "Nodetile": 2
     },
     {
       "Location": {
@@ -21748,22 +21840,28 @@
       "Location": {
         "X": 10,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 11,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 12,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -22153,197 +22251,253 @@
       "Location": {
         "X": 61,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 0
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 62,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 63,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 64,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 65,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 66,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 67,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 68,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 69,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 70,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 71,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 72,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 73,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 74,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 75,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 76,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 77,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 78,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 79,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 80,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 81,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 82,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 83,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 84,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 85,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 86,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 87,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 88,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
@@ -22351,8 +22505,8 @@
         "Y": 26,
         "Z": 1
       },
-      "Nodetype": 2,
-      "Nodetile": 4
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
@@ -22514,22 +22668,28 @@
       "Location": {
         "X": 10,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 11,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 12,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -22919,197 +23079,253 @@
       "Location": {
         "X": 61,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 62,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 63,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 11
     },
     {
       "Location": {
         "X": 64,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 65,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 66,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 67,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 68,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 69,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 70,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 71,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 72,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 73,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 74,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 75,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 76,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 77,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 78,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 79,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 80,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 81,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 82,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 83,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 84,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 85,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 86,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 87,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 88,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
@@ -23118,7 +23334,7 @@
         "Z": 1
       },
       "Nodetype": 2,
-      "Nodetile": 4
+      "Nodetile": 10
     },
     {
       "Location": {
@@ -23280,22 +23496,28 @@
       "Location": {
         "X": 10,
         "Y": 28,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 11,
         "Y": 28,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 12,
         "Y": 28,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -23685,22 +23907,28 @@
       "Location": {
         "X": 61,
         "Y": 28,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 62,
         "Y": 28,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 63,
         "Y": 28,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -24046,22 +24274,28 @@
       "Location": {
         "X": 10,
         "Y": 29,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 11,
         "Y": 29,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 12,
         "Y": 29,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -24451,22 +24685,28 @@
       "Location": {
         "X": 61,
         "Y": 29,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 62,
         "Y": 29,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 63,
         "Y": 29,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -24812,22 +25052,28 @@
       "Location": {
         "X": 10,
         "Y": 30,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 11,
         "Y": 30,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 12,
         "Y": 30,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -25217,22 +25463,28 @@
       "Location": {
         "X": 61,
         "Y": 30,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 62,
         "Y": 30,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 63,
         "Y": 30,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -25578,22 +25830,28 @@
       "Location": {
         "X": 10,
         "Y": 31,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 11,
         "Y": 31,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 12,
         "Y": 31,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -25983,22 +26241,28 @@
       "Location": {
         "X": 61,
         "Y": 31,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 62,
         "Y": 31,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 63,
         "Y": 31,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -26326,22 +26590,28 @@
       "Location": {
         "X": 10,
         "Y": 32,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 11,
         "Y": 32,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 12,
         "Y": 32,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -26731,22 +27001,28 @@
       "Location": {
         "X": 61,
         "Y": 32,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 62,
         "Y": 32,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 63,
         "Y": 32,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -27074,22 +27350,28 @@
       "Location": {
         "X": 10,
         "Y": 33,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 11,
         "Y": 33,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 12,
         "Y": 33,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -27472,29 +27754,37 @@
       "Location": {
         "X": 60,
         "Y": 33,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 61,
         "Y": 33,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 62,
         "Y": 33,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 63,
         "Y": 33,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -27745,6 +28035,9496 @@
       "Location": {
         "X": 99,
         "Y": 33,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 0,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 1,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 2,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 3,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 4,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 5,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 6,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 7,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 8,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 9,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 10,
+        "Y": 34,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 11,
+        "Y": 34,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 12,
+        "Y": 34,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 13,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 14,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 15,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 16,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 17,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 18,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 19,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 20,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 21,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 22,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 23,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 24,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 25,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 26,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 27,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 28,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 29,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 30,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 31,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 32,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 33,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 34,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 35,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 36,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 37,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 38,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 39,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 40,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 41,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 42,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 43,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 44,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 45,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 46,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 47,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 48,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 49,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 50,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 51,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 52,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 53,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 54,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 55,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 56,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 57,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 58,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 59,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 60,
+        "Y": 34,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 61,
+        "Y": 34,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 62,
+        "Y": 34,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 63,
+        "Y": 34,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 64,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 65,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 66,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 67,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 68,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 69,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 70,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 71,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 72,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 73,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 74,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 75,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 76,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 77,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 78,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 79,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 80,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 81,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 82,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 83,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 84,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 85,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 86,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 87,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 88,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 89,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 90,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 91,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 92,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 93,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 94,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 95,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 96,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 97,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 98,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 99,
+        "Y": 34,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 0,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 1,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 2,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 3,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 4,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 5,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 6,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 7,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 8,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 9,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 10,
+        "Y": 35,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 11,
+        "Y": 35,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 12,
+        "Y": 35,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 13,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 14,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 15,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 16,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 17,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 18,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 19,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 20,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 21,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 22,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 23,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 24,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 25,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 26,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 27,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 28,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 29,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 30,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 31,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 32,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 33,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 34,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 35,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 36,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 37,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 38,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 39,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 40,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 41,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 42,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 43,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 44,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 45,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 46,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 47,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 48,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 49,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 50,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 51,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 52,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 53,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 54,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 55,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 56,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 57,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 58,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 59,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 60,
+        "Y": 35,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 61,
+        "Y": 35,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 62,
+        "Y": 35,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 63,
+        "Y": 35,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 64,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 65,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 66,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 67,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 68,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 69,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 70,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 71,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 72,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 73,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 74,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 75,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 76,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 77,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 78,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 79,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 80,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 81,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 82,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 83,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 84,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 85,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 86,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 87,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 88,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 89,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 90,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 91,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 92,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 93,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 94,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 95,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 96,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 97,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 98,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 99,
+        "Y": 35,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 0,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 1,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 2,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 3,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 4,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 5,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 6,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 7,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 8,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 9,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 10,
+        "Y": 36,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 11,
+        "Y": 36,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 12,
+        "Y": 36,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 13,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 14,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 15,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 16,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 17,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 18,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 19,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 20,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 21,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 22,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 23,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 24,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 25,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 26,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 27,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 28,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 29,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 30,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 31,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 32,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 33,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 34,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 35,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 36,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 37,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 38,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 39,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 40,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 41,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 42,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 43,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 44,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 45,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 46,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 47,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 48,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 49,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 50,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 51,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 52,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 53,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 54,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 55,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 56,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 57,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 58,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 59,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 60,
+        "Y": 36,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 5
+    },
+    {
+      "Location": {
+        "X": 61,
+        "Y": 36,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 10
+    },
+    {
+      "Location": {
+        "X": 62,
+        "Y": 36,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 63,
+        "Y": 36,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 64,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 65,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 66,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 67,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 68,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 69,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 70,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 71,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 72,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 73,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 74,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 75,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 76,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 77,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 78,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 79,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 80,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 81,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 82,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 83,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 84,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 85,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 86,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 87,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 88,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 89,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 90,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 91,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 92,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 93,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 94,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 95,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 96,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 97,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 98,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 99,
+        "Y": 36,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 0,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 1,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 2,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 3,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 4,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 5,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 6,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 7,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 8,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 9,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 10,
+        "Y": 37,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 11,
+        "Y": 37,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 12,
+        "Y": 37,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 13,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 14,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 15,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 16,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 17,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 18,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 19,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 20,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 21,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 22,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 23,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 24,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 25,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 26,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 27,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 28,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 29,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 30,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 31,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 32,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 33,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 34,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 35,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 36,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 37,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 38,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 39,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 40,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 41,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 42,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 43,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 44,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 45,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 46,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 47,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 48,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 49,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 50,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 51,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 52,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 53,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 54,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 55,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 56,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 57,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 58,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 59,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 60,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 61,
+        "Y": 37,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 62,
+        "Y": 37,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 63,
+        "Y": 37,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 64,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 65,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 66,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 67,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 68,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 69,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 70,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 71,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 72,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 73,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 74,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 75,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 76,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 77,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 78,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 79,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 80,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 81,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 82,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 83,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 84,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 85,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 86,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 87,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 88,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 89,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 90,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 91,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 92,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 93,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 94,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 95,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 96,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 97,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 98,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 99,
+        "Y": 37,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 0,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 1,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 2,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 3,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 4,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 5,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 6,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 7,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 8,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 9,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 10,
+        "Y": 38,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 11,
+        "Y": 38,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 12,
+        "Y": 38,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 13,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 14,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 15,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 16,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 17,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 18,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 19,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 20,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 21,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 22,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 23,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 24,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 25,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 26,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 27,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 28,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 29,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 30,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 31,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 32,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 33,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 34,
+        "Y": 38,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 35,
+        "Y": 38,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 36,
+        "Y": 38,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 37,
+        "Y": 38,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 38,
+        "Y": 38,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 39,
+        "Y": 38,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 40,
+        "Y": 38,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 41,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 42,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 43,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 44,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 45,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 46,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 47,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 48,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 49,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 50,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 51,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 52,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 53,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 54,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 55,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 56,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 57,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 58,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 59,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 60,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 61,
+        "Y": 38,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 62,
+        "Y": 38,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 63,
+        "Y": 38,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 64,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 65,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 66,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 67,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 68,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 69,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 70,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 71,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 72,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 73,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 74,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 75,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 76,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 77,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 78,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 79,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 80,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 81,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 82,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 83,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 84,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 85,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 86,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 87,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 88,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 89,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 90,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 91,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 92,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 93,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 94,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 95,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 96,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 97,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 98,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 99,
+        "Y": 38,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 0,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 1,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 2,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 3,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 4,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 5,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 6,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 7,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 8,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 9,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 10,
+        "Y": 39,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 11,
+        "Y": 39,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 12,
+        "Y": 39,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 13,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 14,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 15,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 16,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 17,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 18,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 19,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 20,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 21,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 22,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 23,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 24,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 25,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 26,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 27,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 28,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 29,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 30,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 31,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 32,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 33,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 34,
+        "Y": 39,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 35,
+        "Y": 39,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 36,
+        "Y": 39,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 37,
+        "Y": 39,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 38,
+        "Y": 39,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 39,
+        "Y": 39,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 40,
+        "Y": 39,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 41,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 42,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 43,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 44,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 45,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 46,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 47,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 48,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 49,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 50,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 51,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 52,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 53,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 54,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 55,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 56,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 57,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 58,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 59,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 60,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 61,
+        "Y": 39,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 62,
+        "Y": 39,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 63,
+        "Y": 39,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 64,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 65,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 66,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 67,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 68,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 69,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 70,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 71,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 72,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 73,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 74,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 75,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 76,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 77,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 78,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 79,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 80,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 81,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 82,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 83,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 84,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 85,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 86,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 87,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 88,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 89,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 90,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 91,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 92,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 93,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 94,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 95,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 96,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 97,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 98,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 99,
+        "Y": 39,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 0,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 1,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 2,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 3,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 4,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 5,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 6,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 7,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 8,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 9,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 10,
+        "Y": 40,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 11,
+        "Y": 40,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 12,
+        "Y": 40,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 13,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 14,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 15,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 16,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 17,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 18,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 19,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 20,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 21,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 22,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 23,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 24,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 25,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 26,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 27,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 28,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 29,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 30,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 31,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 32,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 33,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 34,
+        "Y": 40,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 35,
+        "Y": 40,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 36,
+        "Y": 40,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 37,
+        "Y": 40,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 38,
+        "Y": 40,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 39,
+        "Y": 40,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 40,
+        "Y": 40,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 41,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 42,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 43,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 44,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 45,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 46,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 47,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 48,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 49,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 50,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 51,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 52,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 53,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 54,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 55,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 56,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 57,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 58,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 59,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 60,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 61,
+        "Y": 40,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 62,
+        "Y": 40,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 63,
+        "Y": 40,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 64,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 65,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 66,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 67,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 68,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 69,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 70,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 71,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 72,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 73,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 74,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 75,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 76,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 77,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 78,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 79,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 80,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 81,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 82,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 83,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 84,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 85,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 86,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 87,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 88,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 89,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 90,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 91,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 92,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 93,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 94,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 95,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 96,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 97,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 98,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 99,
+        "Y": 40,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 0,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 1,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 2,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 3,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 4,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 5,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 6,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 7,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 8,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 9,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 10,
+        "Y": 41,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 11,
+        "Y": 41,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 12,
+        "Y": 41,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 13,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 14,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 15,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 16,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 17,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 18,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 19,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 20,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 21,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 22,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 23,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 24,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 25,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 26,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 27,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 28,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 29,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 30,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 31,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 32,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 33,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 34,
+        "Y": 41,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 35,
+        "Y": 41,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 36,
+        "Y": 41,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 37,
+        "Y": 41,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 38,
+        "Y": 41,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 39,
+        "Y": 41,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 40,
+        "Y": 41,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 41,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 42,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 43,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 44,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 45,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 46,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 47,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 48,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 49,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 50,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 51,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 52,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 53,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 54,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 55,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 56,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 57,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 58,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 59,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 60,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 61,
+        "Y": 41,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 62,
+        "Y": 41,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 63,
+        "Y": 41,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 64,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 65,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 66,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 67,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 68,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 69,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 70,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 71,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 72,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 73,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 74,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 75,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 76,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 77,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 78,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 79,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 80,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 81,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 82,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 83,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 84,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 85,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 86,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 87,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 88,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 89,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 90,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 91,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 92,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 93,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 94,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 95,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 96,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 97,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 98,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 99,
+        "Y": 41,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 0,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 1,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 2,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 3,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 4,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 5,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 6,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 7,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 8,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 9,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 10,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 11,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 12,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 13,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 14,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 15,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 16,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 17,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 18,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 19,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 20,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 21,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 22,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 23,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 24,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 25,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 26,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 27,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 28,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 29,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 30,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 31,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 32,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 33,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 34,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 35,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 36,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 37,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 38,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 39,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 40,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 41,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 42,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 43,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 44,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 45,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 46,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 47,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 48,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 49,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 0,
+      "Nodetile": 0
+    },
+    {
+      "Location": {
+        "X": 50,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 51,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 52,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 53,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 54,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 55,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 56,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 57,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 58,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 59,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 60,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 61,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 62,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 63,
+        "Y": 42,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 64,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 65,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 66,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 67,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 68,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 69,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 70,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 71,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 72,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 73,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 74,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 75,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 76,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 77,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 78,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 79,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 80,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 81,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 82,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 83,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 84,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 85,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 86,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 87,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 88,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 89,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 90,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 91,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 92,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 93,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 94,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 95,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 96,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 97,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 98,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 99,
+        "Y": 42,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 0,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 1,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 2,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 3,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 4,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 5,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 6,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 7,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 8,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 9,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 10,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 11,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 12,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 13,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 14,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 15,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 16,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 17,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 18,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 19,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 20,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 21,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 22,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 23,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 24,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 25,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 26,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 27,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 28,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 29,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 30,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 31,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 32,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 33,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 34,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 35,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 36,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 37,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 38,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 39,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 40,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 41,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 42,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 43,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 44,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 45,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 46,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 47,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 48,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 49,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 0,
+      "Nodetile": 0
+    },
+    {
+      "Location": {
+        "X": 50,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 51,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 52,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 53,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 54,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 55,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 56,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 57,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 58,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 59,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 60,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 61,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 62,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 63,
+        "Y": 43,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 64,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 65,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 66,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 67,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 68,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 69,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 70,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 71,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 72,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 73,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 74,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 75,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 76,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 77,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 78,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 79,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 80,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 81,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 82,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 83,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 84,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 85,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 86,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 87,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 88,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 89,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 90,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 91,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 92,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 93,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 94,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 95,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 96,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 97,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 98,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 99,
+        "Y": 43,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 0,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 1,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 2,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 3,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 4,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 5,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 6,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 7,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 8,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 9,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 10,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 11,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 12,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 13,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 14,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 15,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 16,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 17,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 18,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 19,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 20,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 21,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 22,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 23,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 24,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 25,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 26,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 27,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 28,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 29,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 30,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 31,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 32,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 33,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 34,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 35,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 36,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 37,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 38,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 39,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 40,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 11
+    },
+    {
+      "Location": {
+        "X": 41,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 42,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 43,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 44,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 45,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 46,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 47,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 48,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 7
+    },
+    {
+      "Location": {
+        "X": 49,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 0,
+      "Nodetile": 0
+    },
+    {
+      "Location": {
+        "X": 50,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 5
+    },
+    {
+      "Location": {
+        "X": 51,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 52,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 53,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 54,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 55,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 56,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 57,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 58,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 59,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 60,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 61,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 62,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 63,
+        "Y": 44,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 7
+    },
+    {
+      "Location": {
+        "X": 64,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 65,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 66,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 67,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 68,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 69,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 70,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 71,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 72,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 73,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 74,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 75,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 76,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 77,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 78,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 79,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 80,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 81,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 82,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 83,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 84,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 85,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 86,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 87,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 88,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 89,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 90,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 91,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 92,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 93,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 94,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 95,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 96,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 97,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 98,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 99,
+        "Y": 44,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 0,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 1,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 2,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 3,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 4,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 5,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 6,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 7,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 8,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 9,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 10,
+        "Y": 45,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 5
+    },
+    {
+      "Location": {
+        "X": 11,
+        "Y": 45,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
+    },
+    {
+      "Location": {
+        "X": 12,
+        "Y": 45,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 7
+    },
+    {
+      "Location": {
+        "X": 13,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 14,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 15,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 16,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 17,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 18,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 19,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 20,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 21,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 22,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 23,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 24,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 25,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 26,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 27,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 28,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 29,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 30,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 31,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 32,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 33,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 34,
+        "Y": 45,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
+    },
+    {
+      "Location": {
+        "X": 35,
+        "Y": 45,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 36,
+        "Y": 45,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 37,
+        "Y": 45,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 38,
+        "Y": 45,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 39,
+        "Y": 45,
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
+    },
+    {
+      "Location": {
+        "X": 40,
+        "Y": 45,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
+    },
+    {
+      "Location": {
+        "X": 41,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 42,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 43,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 44,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 45,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 46,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 47,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 48,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 49,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 50,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 51,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 52,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 53,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 54,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 55,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 56,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 57,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 58,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 59,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 60,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 61,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 62,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 63,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 64,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 65,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 66,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 67,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 68,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 69,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 70,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 71,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 72,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 73,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 74,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 75,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 76,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 77,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 78,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 79,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 80,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 81,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 82,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 83,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 84,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 85,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 86,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 87,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 88,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 89,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 90,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 91,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 92,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 93,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 94,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 95,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 96,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 97,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 98,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 99,
+        "Y": 45,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 0,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 1,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 2,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 3,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 4,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 5,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 6,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 7,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 8,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 9,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 10,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 11,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 12,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 13,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 14,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 15,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 16,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 17,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 18,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 19,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 20,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 21,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 22,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 23,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 24,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 25,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 26,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 27,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 28,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 29,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 30,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 31,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 32,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 33,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 34,
+        "Y": 46,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 5
+    },
+    {
+      "Location": {
+        "X": 35,
+        "Y": 46,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 36,
+        "Y": 46,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 37,
+        "Y": 46,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 38,
+        "Y": 46,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 39,
+        "Y": 46,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
+    },
+    {
+      "Location": {
+        "X": 40,
+        "Y": 46,
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 7
+    },
+    {
+      "Location": {
+        "X": 41,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 42,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 43,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 44,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 45,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 46,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 47,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 48,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 49,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 50,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 51,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 52,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 53,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 54,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 55,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 56,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 57,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 58,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 59,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 60,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 61,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 62,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 63,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 64,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 65,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 66,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 67,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 68,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 69,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 70,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 71,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 72,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 73,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 74,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 75,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 76,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 77,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 78,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 79,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 80,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 81,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 82,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 83,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 84,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 85,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 86,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 87,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 88,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 89,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 90,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 91,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 92,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 93,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 94,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 95,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 96,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 97,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 98,
+        "Y": 46,
+        "Z": -100
+      }
+    },
+    {
+      "Location": {
+        "X": 99,
+        "Y": 46,
         "Z": -100
       }
     }
