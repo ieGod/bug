@@ -11,6 +11,7 @@ import (
 	"encoding/json"
 	"image"
 	"log"
+	"math/rand"
 	"os"
 
 	"github.com/hajimehoshi/ebiten/v2"
@@ -56,8 +57,8 @@ func NewAsphodelScene(dimensions coordinates.Dimension) *AsphodelScene {
 			Z: 0,
 		},
 		Scale: coordinates.Vector64{
-			X: constants.Scale,
-			Y: constants.Scale,
+			X: constants.CameraScale,
+			Y: constants.CameraScale,
 			Z: 0,
 		},
 		Easing: 8.,
@@ -73,6 +74,7 @@ func NewAsphodelScene(dimensions coordinates.Dimension) *AsphodelScene {
 func (scene *AsphodelScene) Draw(img *ebiten.Image) {
 
 	img.Clear()
+	img.Fill(fx.HexToRGBA(0x25131a, 0xff))
 
 	op := &ebiten.DrawImageOptions{}
 	//op.GeoM.Scale(2, 2)
@@ -98,9 +100,19 @@ func (scene *AsphodelScene) Draw(img *ebiten.Image) {
 
 	//draw the bug
 	op.GeoM.Reset()
-	op.GeoM.Scale(constants.Scale, constants.Scale)
-	op.GeoM.Translate(constants.Scale*constants.BugWidth*6, constants.Scale*constants.BugHeight*3)
+	op.GeoM.Scale(constants.CameraScale, constants.CameraScale)
+	op.GeoM.Translate(constants.CameraScale*constants.BugWidth*6, constants.CameraScale*constants.BugHeight*3)
 	img.DrawImage(scene.bug.Sprite, op)
+
+	//draw MauriceCam™
+
+	ox := int(npcloc.X) - 1*constants.BugWidth
+	oy := int(npcloc.Y) - 1*constants.BugHeight
+	ox1 := ox + constants.BugWidth*3*2
+	oy1 := oy + constants.BugHeight*3*2
+	op.GeoM.Reset()
+	op.GeoM.Translate(50, 50)
+	img.DrawImage(scene.scene.SubImage(image.Rect(ox, oy, ox1, oy1)).(*ebiten.Image), op)
 
 }
 
@@ -175,8 +187,8 @@ func (scene *AsphodelScene) GetImageFromNodeTile(tiletype definitions.NodeTile) 
 	var x0, y0 int
 	switch tiletype {
 	case definitions.NodeTileGround:
-		x0 = 32
-		y0 = 32
+		x0 = 32 * (4 - rand.Intn(4))
+		y0 = 32 * (3 - rand.Intn(3))
 	case definitions.NodeTileWallBottom:
 		x0 = 32
 		y0 = 32 * 4
@@ -197,6 +209,15 @@ func (scene *AsphodelScene) GetImageFromNodeTile(tiletype definitions.NodeTile) 
 	case definitions.NodeTileWallBottomRight:
 		x0 = 32 * 5
 		y0 = 32 * 4
+	case definitions.NodeTileBlank:
+		x0 = 32 * 8
+		y0 = 32 * 7
+	case definitions.NodeTileInsideTopLeft:
+		x0 = 32 * 5
+		y0 = 32 * 5
+	case definitions.NodeTileInsideTopRight:
+		x0 = 32 * 0
+		y0 = 32 * 5
 	}
 
 	img = images.BugImages[images.IMGTILESET].SubImage(image.Rect(x0, y0, x0+32, y0+32)).(*ebiten.Image)
