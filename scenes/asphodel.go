@@ -24,10 +24,11 @@ type AsphodelScene struct {
 	tick       int
 
 	//scene components
-	bugmap  *bugmap.Level
-	scratch *ebiten.Image //our pre-generated map, we don't update this
-	scene   *ebiten.Image //our updated scene, drawn overtop the pre-generated map
-	bugcam  *elements.BugCam
+	bugmap    *bugmap.Level
+	scratch   *ebiten.Image //our pre-generated map, we don't update this
+	mcscratch *ebiten.Image //maurice-cam scratchpad
+	scene     *ebiten.Image //our updated scene, drawn overtop the pre-generated map
+	bugcam    *elements.BugCam
 
 	//scene elements
 	ground *ebiten.Image
@@ -104,15 +105,20 @@ func (scene *AsphodelScene) Draw(img *ebiten.Image) {
 	op.GeoM.Translate(constants.CameraScale*constants.BugWidth*6, constants.CameraScale*constants.BugHeight*3)
 	img.DrawImage(scene.bug.Sprite, op)
 
-	//draw MauriceCam™
+	//clone the scene onto our maurice cam scratchpad and add the player bug
+	scene.mcscratch.DrawImage(scene.scene, nil)
+	op.GeoM.Reset()
+	op.GeoM.Translate(mx/2+constants.BugWidth*6, my/2+constants.BugHeight*3)
+	scene.mcscratch.DrawImage(scene.bug.Sprite, op)
 
-	ox := int(npcloc.X) - 1*constants.BugWidth
-	oy := int(npcloc.Y) - 1*constants.BugHeight
-	ox1 := ox + constants.BugWidth*3*2
-	oy1 := oy + constants.BugHeight*3*2
+	//draw MauriceCam™
+	ox := int(npcloc.X) - 3*constants.BugWidth
+	oy := int(npcloc.Y) - 2*constants.BugHeight
+	ox1 := ox + constants.BugWidth*7
+	oy1 := oy + constants.BugHeight*5
 	op.GeoM.Reset()
 	op.GeoM.Translate(50, 50)
-	img.DrawImage(scene.scene.SubImage(image.Rect(ox, oy, ox1, oy1)).(*ebiten.Image), op)
+	img.DrawImage(scene.mcscratch.SubImage(image.Rect(ox, oy, ox1, oy1)).(*ebiten.Image), op)
 
 }
 
@@ -158,6 +164,7 @@ func (scene *AsphodelScene) Load() {
 
 	scene.scene = ebiten.NewImage(scenedimensions.Width, scenedimensions.Height)
 	scene.scratch = ebiten.NewImage(scenedimensions.Width, scenedimensions.Height)
+	scene.mcscratch = ebiten.NewImage(scenedimensions.Width, scenedimensions.Height)
 	scene.ground = ebiten.NewImage(32, 32)
 	scene.wall = ebiten.NewImage(32, 32)
 	scene.ground.Fill(fx.HexToRGBA(0x44FF44, 0xFF))
