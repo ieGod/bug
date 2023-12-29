@@ -53,6 +53,8 @@ func (scene *IntroScene) Draw(img *ebiten.Image) {
 
 	text.Draw(img, constants.Strings.PressEnter, fonts.Bugger.Arcade, scene.dimensions.Width/2-100, scene.dimensions.Height/2+200, color.White)
 
+	text.Draw(img, "®2023 bsoft games", fonts.Bugger.Arcade, scene.dimensions.Width/2-92, scene.dimensions.Height/2+250, color.White)
+
 	scene.cycle++
 }
 
