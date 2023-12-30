@@ -6,4 +6,5 @@ const (
 	BugIdleFramecount       = 4
 	BugForwardRunFramecount = 6
 	BugSideRunFramecount    = 6
+	AnimationCameraEasing   = 8
 )

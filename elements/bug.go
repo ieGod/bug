@@ -55,6 +55,11 @@ func (elem *Bug) SetTargetLocation(pos coordinates.Vector) {
 	elem.targetlocation = pos
 }
 
+func (elem *Bug) ForceAllPositionsGrid(pos coordinates.Vector) {
+	elem.SetLocation(pos)
+	elem.SetTargetLocation(pos)
+}
+
 func (elem *Bug) GetLocation() coordinates.Vector {
 	return elem.location
 }

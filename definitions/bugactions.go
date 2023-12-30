@@ -8,4 +8,5 @@ const (
 	BugActionSideRun
 	BugActionReverseRun
 	BugActionGlitch
+	BugActionDeath
 )

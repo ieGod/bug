@@ -1,16 +1,18 @@
 package constants
 
 type DefaultStrings struct {
-	Loading      string
-	ThanksTxt    string
-	VersionInfo  string
-	Title        string
-	IntroName    string
-	SwatName     string
-	AsphodelName string
-	PressEnter   string
-	Targeted     string
-	Splat        string
+	Loading       string
+	ThanksTxt     string
+	VersionInfo   string
+	Title         string
+	IntroName     string
+	SwatName      string
+	AsphodelName  string
+	PressEnter    string
+	Targeted      string
+	Splat         string
+	GameOverReset string
+	VileScum      string
 }
 
 var (
@@ -28,4 +30,6 @@ func init() {
 	Strings.PressEnter = "Press Enter to Play"
 	Strings.Targeted = "DANGER"
 	Strings.Splat = "SWATTED"
+	Strings.GameOverReset = "GAME OVER F5 TO RESTART"
+	Strings.VileScum = "VILE SCUM, SUFFER ETERNITY AS YOUR PREY"
 }

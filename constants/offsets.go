@@ -6,4 +6,7 @@ const (
 	OffsetSplatCamRightMargin = 20
 	OffsetSplatCamTopMargin   = 10
 	OffsetSplatCamLeftMargin  = 15
+	OffsetGameOverResetX      = 175
+	OffsetGameOverResetY      = 325
+	OffsetSplatX              = 40
 )

@@ -104,6 +104,8 @@ func (elem *Handy) SetRole(action definitions.BugAction, direction coordinates.D
 		definitions.BugActionReverseRun,
 		definitions.BugActionGlitch:
 		targetframes = constants.BugForwardRunFramecount
+	case definitions.BugActionDeath:
+		targetframes = 5
 	}
 	elem.SetTargetFrameCycles(targetframes)
 }
