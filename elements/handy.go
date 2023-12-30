@@ -22,6 +22,7 @@ type Handy struct {
 	waypoints       []coordinates.Vector
 	animationframes int
 	cycle           int
+	deathcalled     bool
 }
 
 func NewHandy() *Handy {
@@ -35,6 +36,7 @@ func NewHandy() *Handy {
 		loc64:           coordinates.Vector64{},
 		targetloc64:     coordinates.Vector64{},
 		waypoints:       make([]coordinates.Vector, 1),
+		deathcalled:     false,
 	}
 }
 
@@ -54,6 +56,12 @@ func (elem *Handy) Animate() {
 	//elem.Sprite.DrawImage(images.BugImages[images.IMGBUG].SubImage(image.Rect(ox, oy, ox+constants.BugWidth, oy+constants.BugHeight)).(*ebiten.Image), op)
 	elem.Sprite.DrawImage(images.BugImages[images.IMGMAURICE].SubImage(image.Rect(ox, oy, ox+constants.BugWidth, oy+constants.BugHeight)).(*ebiten.Image), op)
 	elem.cycle++
+
+	if elem.deathcalled && elem.cycle > 10 {
+		elem.action = definitions.BugActionIdle
+		elem.SetTargetFrameCycles(constants.BugIdleFramecount)
+	}
+
 }
 
 func (elem *Handy) SetLocation(pos coordinates.Vector) {
@@ -88,11 +96,19 @@ func (elem *Handy) GetTargetLoc64() coordinates.Vector64 {
 	return elem.targetloc64
 }
 
+func (elem *Handy) Reset() {
+	elem.deathcalled = false
+}
+
 func (elem *Handy) SetTargetFrameCycles(cycles int) {
 	elem.animationframes = cycles
 }
 
 func (elem *Handy) SetRole(action definitions.BugAction, direction coordinates.Direction) {
+	if elem.deathcalled {
+		return
+	}
+
 	var targetframes int = constants.AnimationFrames
 	elem.action = action
 	elem.direction = direction
@@ -105,6 +121,8 @@ func (elem *Handy) SetRole(action definitions.BugAction, direction coordinates.D
 		definitions.BugActionGlitch:
 		targetframes = constants.BugForwardRunFramecount
 	case definitions.BugActionDeath:
+		elem.deathcalled = true
+		elem.cycle = 0
 		targetframes = 5
 	}
 	elem.SetTargetFrameCycles(targetframes)

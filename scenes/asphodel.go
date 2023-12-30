@@ -179,6 +179,7 @@ func (scene *AsphodelScene) Load() {
 
 	scene.bug.ForceAllPositionsGrid(constants.LocationBugStart)
 	scene.hand.ForceAllPositionsGrid(constants.LocationMauriceStart)
+	scene.hand.Reset()
 	scene.SetBugIdle()
 
 	scene.canglitch = true
