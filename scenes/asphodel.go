@@ -9,6 +9,7 @@ import (
 	"bug/fonts"
 	"bug/fx"
 	"bug/resources/images"
+	"bug/resources/shaders"
 	_ "embed"
 	"encoding/json"
 	"fmt"
@@ -32,6 +33,7 @@ type AsphodelScene struct {
 	dimensions coordinates.Dimension
 	loaded     bool
 	tick       int
+	drawcycles int
 
 	//scene components
 	bugmap    *bugmap.Level
@@ -41,8 +43,9 @@ type AsphodelScene struct {
 	bugcam    *elements.BugCam
 
 	//scene elements
-	bug  *elements.Bug
-	hand *elements.Handy
+	bug    *elements.Bug
+	hand   *elements.Handy
+	shader *ebiten.Shader
 
 	//logical states
 	canglitch      bool
@@ -52,6 +55,14 @@ type AsphodelScene struct {
 }
 
 func NewAsphodelScene(dimensions coordinates.Dimension) *AsphodelScene {
+
+	var err error
+	var s *ebiten.Shader
+	s, err = ebiten.NewShader(shaders.Glitch)
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	asphodel := &AsphodelScene{
 		dimensions:     dimensions,
 		loaded:         false,
@@ -62,6 +73,8 @@ func NewAsphodelScene(dimensions coordinates.Dimension) *AsphodelScene {
 		glitching:      false,
 		glitchcooldown: 0,
 		gameover:       false,
+		shader:         s,
+		drawcycles:     0,
 	}
 
 	return asphodel
@@ -186,6 +199,8 @@ func (scene *AsphodelScene) Load() {
 	scene.glitching = false
 	scene.glitchcooldown = 0
 	scene.gameover = false
+	scene.tick = 0
+	scene.drawcycles = 0
 
 	scene.loaded = true
 
@@ -480,7 +495,28 @@ func (scene *AsphodelScene) DrawScene(img *ebiten.Image) {
 	op.GeoM.Reset()
 	op.GeoM.Translate(50, 50)
 	vector.DrawFilledRect(img, 45, 45, 234, 170, fx.HexToRGBA(0x4c2f49, 0xff), true)
-	img.DrawImage(scene.mcscratch.SubImage(image.Rect(ox, oy, ox1, oy1)).(*ebiten.Image), op)
+
+	mcimg := scene.mcscratch.SubImage(image.Rect(ox, oy, ox1, oy1)).(*ebiten.Image)
+
+	if scene.glitching {
+		sop := &ebiten.DrawRectShaderOptions{}
+		sop.GeoM.Translate(50, 50)
+		w := constants.BugWidth * 7
+		h := constants.BugHeight * 5
+
+		sop.Uniforms = map[string]any{
+			"Glitchy": 200*rand.Float32() + 100,
+		}
+		sop.Images[0] = img0
+		sop.Images[1] = img1
+		sop.Images[2] = mcimg
+		sop.Images[3] = img2
+		img.DrawRectShader(w, h, scene.shader, sop)
+	} else {
+		img.DrawImage(mcimg, op)
+	}
+
+	scene.drawcycles++
 }
 
 func (scene *AsphodelScene) DrawGlitchIndicator(img *ebiten.Image) {
@@ -497,4 +533,21 @@ func (scene *AsphodelScene) DrawGlitchIndicator(img *ebiten.Image) {
 	}
 
 	text.Draw(img, gtxt, fonts.Bugger.Arcade, 1280-130, 720-12, gclr)
+}
+
+var (
+	img0 *ebiten.Image
+	img1 *ebiten.Image
+	img2 *ebiten.Image
+)
+
+func init() {
+	img0 = ebiten.NewImage(constants.BugWidth*7, constants.BugHeight*5)
+	vector.DrawFilledCircle(img0, 16, 16, 16, fx.HexToRGBA(0xFF0000, 0xff), false)
+
+	img1 = ebiten.NewImage(constants.BugWidth*7, constants.BugHeight*5)
+	vector.DrawFilledCircle(img1, 16, 16, 16, fx.HexToRGBA(0x00FF00, 0xff), false)
+
+	img2 = ebiten.NewImage(constants.BugWidth*7, constants.BugHeight*5)
+	vector.DrawFilledCircle(img2, 16, 16, 16, fx.HexToRGBA(0x0000FF, 0xff), false)
 }

@@ -1,0 +1,35 @@
+package main
+
+// Specify the 'pixel' mode.
+//kage:unit pixels
+
+// Uniform variables.
+var Glitchy float
+		
+
+func Fragment(dstPos vec4, srcPos vec2, color vec4) vec4 {
+
+	var pi = 3.14159265358979323846
+	var offset vec2
+	var clr vec3
+	var shiftzero vec2
+
+	cx := (2.0 + Glitchy/10.0) * sin(Glitchy/(pi*6))
+	cy := (2.0 + Glitchy/10.0) * cos(Glitchy/(pi*6))	
+	offset = vec2(cx, cy)
+	shiftzero =  vec2(offset.x/2*sin(offset.x), offset.y/2*cos(offset.y))
+
+
+	clrPos := imageSrc2At(srcPos + offset)
+	clrZero := imageSrc2UnsafeAt(srcPos + shiftzero)
+	clrNeg := imageSrc2At(srcPos - offset)
+
+	clr = vec3(
+		clrPos.r*clrPos.a,
+		clrZero.g*clrZero.a,
+		clrNeg.b*clrNeg.a,
+	)
+
+	a := max(clrPos.a, max(clrZero.a, clrNeg.a)) // If none of the 3 pixels contain alpha, then the global color will be set to totally transparent
+	return vec4(clr, 1)*a
+}
