@@ -5,6 +5,7 @@ package main
 
 // Uniform variables.
 var Glitchy float
+var Glitchyfactor float
 		
 
 func Fragment(dstPos vec4, srcPos vec2, color vec4) vec4 {
@@ -14,10 +15,10 @@ func Fragment(dstPos vec4, srcPos vec2, color vec4) vec4 {
 	var clr vec3
 	var shiftzero vec2
 
-	cx := (2.0 + Glitchy/10.0) * sin(Glitchy/(pi*6))
-	cy := (2.0 + Glitchy/10.0) * cos(Glitchy/(pi*6))	
+	cx := 15.0 * sin(Glitchy/(pi*6)) - (10*Glitchyfactor-5)
+	cy := 15.0 * cos(Glitchy/(pi*6)) - (10*Glitchyfactor-5)
 	offset = vec2(cx, cy)
-	shiftzero =  vec2(offset.x/2*sin(offset.x), offset.y/2*cos(offset.y))
+	shiftzero =  vec2(offset.x/2*sin(offset.x), offset.y/2*cos(offset.y)) 
 
 
 	clrPos := imageSrc2At(srcPos + offset)

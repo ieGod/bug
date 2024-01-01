@@ -392,6 +392,12 @@ func (scene *AsphodelScene) handleInputs() {
 	if inpututil.IsKeyJustPressed(ebiten.KeyN) {
 		scene.ChasePlayer()
 	}
+	/*
+		if inpututil.IsKeyJustPressed(ebiten.KeyNumpad0) {
+			scene.glitching = !scene.glitching
+			scene.glitchcooldown = 1000 * 60
+		}
+	*/
 }
 
 // we're going to use a* to find a path from the npc to the player
@@ -505,7 +511,8 @@ func (scene *AsphodelScene) DrawScene(img *ebiten.Image) {
 		h := constants.BugHeight * 5
 
 		sop.Uniforms = map[string]any{
-			"Glitchy": 200*rand.Float32() + 100,
+			"Glitchy":       float32(scene.drawcycles), //200*rand.Float32() + 100,
+			"Glitchyfactor": rand.Float32(),
 		}
 		sop.Images[0] = img0
 		sop.Images[1] = img1
