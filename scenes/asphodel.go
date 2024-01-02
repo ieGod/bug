@@ -275,6 +275,7 @@ func (scene *AsphodelScene) Load() {
 	scene.tick = 0
 	scene.drawcycles = 0
 	scene.firstflag = false
+	scene.score = 0
 
 	scene.loaded = true
 
