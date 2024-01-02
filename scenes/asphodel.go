@@ -11,16 +11,20 @@ import (
 	"bug/resources/images"
 	"bug/resources/sfx"
 	"bug/resources/shaders"
+	"bytes"
 	_ "embed"
 	"encoding/json"
 	"fmt"
 	"image"
 	"image/color"
+	"io"
 	"log"
 	"math/rand"
+	"time"
 
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/hajimehoshi/ebiten/v2/audio"
+	"github.com/hajimehoshi/ebiten/v2/audio/mp3"
 	"github.com/hajimehoshi/ebiten/v2/inpututil"
 	"github.com/hajimehoshi/ebiten/v2/text"
 	"github.com/hajimehoshi/ebiten/v2/vector"
@@ -58,8 +62,10 @@ type AsphodelScene struct {
 	//audio
 	seCh         chan []byte
 	audioContext *audio.Context
+	audioPlayer  *audio.Player
 	seBytes      []byte
 	firstflag    bool
+	musicstarted bool
 
 	//scoreboard
 	score int
@@ -70,6 +76,23 @@ func NewAsphodelScene(dimensions coordinates.Dimension) *AsphodelScene {
 	var err error
 	var s *ebiten.Shader
 	s, err = ebiten.NewShader(shaders.Glitch)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	type audioStream interface {
+		io.ReadSeeker
+		Length() int64
+	}
+
+	var stream audioStream
+	stream, err = mp3.DecodeWithoutResampling(bytes.NewReader(sfx.Asphodel_mp3))
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	ac := audio.NewContext(44100)
+	ap, err := ac.NewPlayer(stream)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -86,10 +109,12 @@ func NewAsphodelScene(dimensions coordinates.Dimension) *AsphodelScene {
 		gameover:       false,
 		shader:         s,
 		drawcycles:     0,
-		audioContext:   audio.NewContext(44100),
+		audioContext:   ac,
+		audioPlayer:    ap,
 		seBytes:        sfx.Caught_mp3,
 		score:          0,
 		firstflag:      false,
+		musicstarted:   false,
 	}
 
 	return asphodel
@@ -111,6 +136,18 @@ func (scene *AsphodelScene) Draw(img *ebiten.Image) {
 }
 
 func (scene *AsphodelScene) Update() error {
+
+	if !scene.musicstarted {
+		scene.musicstarted = true
+		scene.audioPlayer.Play()
+	}
+
+	if scene.audioPlayer.IsPlaying() {
+		myt, _ := time.ParseDuration("12s")
+		if scene.audioPlayer.Position() >= myt {
+			scene.audioPlayer.Rewind()
+		}
+	}
 
 	select {
 	case scene.seBytes = <-scene.seCh:

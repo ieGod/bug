@@ -11,6 +11,9 @@ var (
 
 	//go:embed caught.wav
 	Caught_mp3 []byte
+
+	//go:embed asphodel.mp3
+	Asphodel_mp3 []byte
 )
 
 func init() {
