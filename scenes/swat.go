@@ -8,9 +8,15 @@ import (
 	"bug/fonts"
 	"bug/fx"
 	"bug/resources/images"
+	"bug/resources/sfx"
+	"bytes"
 	"image/color"
+	"io"
+	"log"
 
 	"github.com/hajimehoshi/ebiten/v2"
+	"github.com/hajimehoshi/ebiten/v2/audio"
+	"github.com/hajimehoshi/ebiten/v2/audio/mp3"
 	"github.com/hajimehoshi/ebiten/v2/inpututil"
 	"github.com/hajimehoshi/ebiten/v2/text"
 	"github.com/hajimehoshi/ebiten/v2/vector"
@@ -32,9 +38,33 @@ type SwatScene struct {
 	bugcollision bool //does our splat mask cover part of the bug?
 	whack        bool //are we now whacking?
 	gameover     bool //did we get hit?
+
+	seCh         chan []byte
+	audioContext *audio.Context
+	audioPlayer  *audio.Player
+	seBytes      []byte
+	firstflag    bool
+	musicstarted bool
 }
 
 func NewSwatScene(dimensions coordinates.Dimension) *SwatScene {
+	type audioStream interface {
+		io.ReadSeeker
+		Length() int64
+	}
+
+	var stream audioStream
+	stream, err := mp3.DecodeWithoutResampling(bytes.NewReader(sfx.AsphodelMp3))
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	ac := audio.NewContext(sfx.SamepleRate)
+	ap, err := ac.NewPlayer(stream)
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	var scene *SwatScene = &SwatScene{
 		bug:          elements.NewBug(),
 		swatter:      elements.NewSplat(),
@@ -49,6 +79,11 @@ func NewSwatScene(dimensions coordinates.Dimension) *SwatScene {
 		bugcollision: false,
 		whack:        false,
 		gameover:     false,
+		audioContext: ac,
+		audioPlayer:  ap,
+		seBytes:      sfx.SwatWav,
+		firstflag:    false,
+		musicstarted: false,
 	}
 
 	return scene
@@ -97,11 +132,22 @@ func (scene *SwatScene) Update() error {
 		}
 	}
 
+	select {
+	case scene.seBytes = <-scene.seCh:
+		close(scene.seCh)
+		scene.seCh = nil
+	default:
+	}
+
 	scene.handleOtherInputs()
-
 	scene.swatter.Animate()
-
 	scene.CheckCollisions()
+
+	if scene.gameover && !scene.firstflag {
+		scene.firstflag = true
+		sePlayer := scene.audioContext.NewPlayerFromBytes(scene.seBytes)
+		sePlayer.Play()
+	}
 
 	scene.tick++
 	return nil

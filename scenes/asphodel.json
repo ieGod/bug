@@ -16082,7 +16082,7 @@
         "Z": 1
       },
       "Nodetype": 2,
-      "Nodetile": 6
+      "Nodetile": 10
     },
     {
       "Location": {
@@ -16090,8 +16090,8 @@
         "Y": 18,
         "Z": 1
       },
-      "Nodetype": 2,
-      "Nodetile": 6
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
@@ -16100,7 +16100,7 @@
         "Z": 1
       },
       "Nodetype": 2,
-      "Nodetile": 6
+      "Nodetile": 11
     },
     {
       "Location": {
@@ -16921,29 +16921,37 @@
       "Location": {
         "X": 77,
         "Y": 19,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 78,
         "Y": 19,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 79,
         "Y": 19,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
         "X": 80,
         "Y": 19,
-        "Z": -100
-      }
+        "Z": 0
+      },
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -17693,29 +17701,37 @@
       "Location": {
         "X": 77,
         "Y": 20,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 78,
         "Y": 20,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 79,
         "Y": 20,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
         "X": 80,
         "Y": 20,
-        "Z": -100
-      }
+        "Z": 0
+      },
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -18332,162 +18348,208 @@
       "Location": {
         "X": 58,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 3
     },
     {
       "Location": {
         "X": 59,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 60,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 61,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 62,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 63,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 64,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 65,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 66,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 67,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 68,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 69,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 70,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 71,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 72,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 73,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 74,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 75,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 76,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 77,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 78,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 79,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
         "X": 80,
         "Y": 21,
-        "Z": -100
-      }
+        "Z": 0
+      },
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -18632,8 +18694,10 @@
       "Location": {
         "X": 0,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 11
     },
     {
       "Location": {
@@ -19084,169 +19148,217 @@
       "Location": {
         "X": 56,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 57,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 58,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 59,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 60,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 61,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 62,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 63,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 64,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 65,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 66,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 67,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 68,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 69,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 70,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 71,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 72,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 73,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 74,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 75,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 76,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 77,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 78,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 79,
         "Y": 22,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -19844,169 +19956,217 @@
       "Location": {
         "X": 56,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 57,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 58,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 59,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 60,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 11
     },
     {
       "Location": {
         "X": 61,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 62,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 63,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 64,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 65,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 66,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 67,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 68,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 69,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 70,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 71,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 72,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 73,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 74,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 75,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 76,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 77,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 78,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 79,
         "Y": 23,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 7
     },
     {
       "Location": {
@@ -20616,36 +20776,46 @@
       "Location": {
         "X": 56,
         "Y": 24,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 57,
         "Y": 24,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 58,
         "Y": 24,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 11
     },
     {
       "Location": {
         "X": 59,
         "Y": 24,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 60,
         "Y": 24,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 7
     },
     {
       "Location": {
@@ -21388,22 +21558,28 @@
       "Location": {
         "X": 56,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 57,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 58,
         "Y": 25,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -22238,22 +22414,28 @@
       "Location": {
         "X": 56,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 57,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 58,
         "Y": 26,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -23081,29 +23263,37 @@
       "Location": {
         "X": 55,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 56,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 57,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 58,
         "Y": 27,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -23931,29 +24121,37 @@
       "Location": {
         "X": 55,
         "Y": 28,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 56,
         "Y": 28,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 57,
         "Y": 28,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 58,
         "Y": 28,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -24715,29 +24913,37 @@
       "Location": {
         "X": 55,
         "Y": 29,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 56,
         "Y": 29,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 57,
         "Y": 29,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 58,
         "Y": 29,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -25220,43 +25426,55 @@
       "Location": {
         "X": 22,
         "Y": 30,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 23,
         "Y": 30,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 24,
         "Y": 30,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 25,
         "Y": 30,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 26,
         "Y": 30,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 27,
         "Y": 30,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
@@ -25265,7 +25483,7 @@
         "Z": 1
       },
       "Nodetype": 2,
-      "Nodetile": 4
+      "Nodetile": 2
     },
     {
       "Location": {
@@ -25499,29 +25717,37 @@
       "Location": {
         "X": 55,
         "Y": 30,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 56,
         "Y": 30,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 57,
         "Y": 30,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 58,
         "Y": 30,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -26004,43 +26230,55 @@
       "Location": {
         "X": 22,
         "Y": 31,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 23,
         "Y": 31,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 24,
         "Y": 31,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 25,
         "Y": 31,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 26,
         "Y": 31,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 27,
         "Y": 31,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
@@ -26048,8 +26286,8 @@
         "Y": 31,
         "Z": 1
       },
-      "Nodetype": 2,
-      "Nodetile": 4
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
@@ -26283,29 +26521,37 @@
       "Location": {
         "X": 55,
         "Y": 31,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 56,
         "Y": 31,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 57,
         "Y": 31,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 58,
         "Y": 31,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -26770,43 +27016,55 @@
       "Location": {
         "X": 22,
         "Y": 32,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 23,
         "Y": 32,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 24,
         "Y": 32,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 11
     },
     {
       "Location": {
         "X": 25,
         "Y": 32,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 26,
         "Y": 32,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 27,
         "Y": 32,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
@@ -26815,7 +27073,7 @@
         "Z": 1
       },
       "Nodetype": 2,
-      "Nodetile": 4
+      "Nodetile": 10
     },
     {
       "Location": {
@@ -27049,29 +27307,37 @@
       "Location": {
         "X": 55,
         "Y": 32,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 56,
         "Y": 32,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 57,
         "Y": 32,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 58,
         "Y": 32,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -27536,22 +27802,28 @@
       "Location": {
         "X": 22,
         "Y": 33,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 23,
         "Y": 33,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 24,
         "Y": 33,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -27815,29 +28087,37 @@
       "Location": {
         "X": 55,
         "Y": 33,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 56,
         "Y": 33,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 57,
         "Y": 33,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 58,
         "Y": 33,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -28304,162 +28584,208 @@
       "Location": {
         "X": 22,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 23,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 24,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 25,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 26,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 27,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 28,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 29,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 30,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 31,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 32,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 33,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 34,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 35,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 36,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 37,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 38,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 39,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 40,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 41,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 42,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 43,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 44,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -28535,29 +28861,37 @@
       "Location": {
         "X": 55,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 56,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 57,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 58,
         "Y": 34,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -29024,162 +29358,208 @@
       "Location": {
         "X": 22,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 23,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 24,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 25,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 26,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 27,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 28,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 29,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 30,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 31,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 32,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 33,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 34,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 35,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 36,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 37,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 38,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 39,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 40,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 41,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 42,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 43,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 44,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -29227,57 +29607,73 @@
       "Location": {
         "X": 51,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 0
+      },
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
         "X": 52,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 0
+      },
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
         "X": 53,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 0
+      },
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
         "X": 54,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 0
+      },
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
         "X": 55,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 56,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 57,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 58,
         "Y": 35,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -29744,162 +30140,208 @@
       "Location": {
         "X": 22,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 5
     },
     {
       "Location": {
         "X": 23,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 24,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 25,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 26,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 27,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 28,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 29,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 30,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 31,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 32,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 33,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 34,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 35,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 36,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 37,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 38,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 39,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 40,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 41,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 42,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 10
     },
     {
       "Location": {
         "X": 43,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 44,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -29947,8 +30389,10 @@
       "Location": {
         "X": 51,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 0
+      },
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
@@ -29975,36 +30419,46 @@
       "Location": {
         "X": 55,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 56,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 57,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 58,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 59,
         "Y": 36,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -30604,22 +31058,28 @@
       "Location": {
         "X": 42,
         "Y": 37,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 43,
         "Y": 37,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 44,
         "Y": 37,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -30667,64 +31127,82 @@
       "Location": {
         "X": 51,
         "Y": 37,
-        "Z": -100
-      }
+        "Z": 0
+      },
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
         "X": 52,
         "Y": 37,
-        "Z": -100
-      }
+        "Z": 0
+      },
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
         "X": 53,
         "Y": 37,
-        "Z": -100
-      }
+        "Z": 0
+      },
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
         "X": 54,
         "Y": 37,
-        "Z": -100
-      }
+        "Z": 0
+      },
+      "Nodetype": 0,
+      "Nodetile": 0
     },
     {
       "Location": {
         "X": 55,
         "Y": 37,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 56,
         "Y": 37,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 57,
         "Y": 37,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 58,
         "Y": 37,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 59,
         "Y": 37,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -31336,127 +31814,163 @@
       "Location": {
         "X": 42,
         "Y": 38,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 43,
         "Y": 38,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 44,
         "Y": 38,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 45,
         "Y": 38,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 46,
         "Y": 38,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 47,
         "Y": 38,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 48,
         "Y": 38,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 49,
         "Y": 38,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 50,
         "Y": 38,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 51,
         "Y": 38,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 52,
         "Y": 38,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 53,
         "Y": 38,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 54,
         "Y": 38,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 55,
         "Y": 38,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 2
     },
     {
       "Location": {
         "X": 56,
         "Y": 38,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 57,
         "Y": 38,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 58,
         "Y": 38,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 59,
         "Y": 38,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -32068,127 +32582,163 @@
       "Location": {
         "X": 42,
         "Y": 39,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 4
     },
     {
       "Location": {
         "X": 43,
         "Y": 39,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 44,
         "Y": 39,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 45,
         "Y": 39,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 46,
         "Y": 39,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 47,
         "Y": 39,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 48,
         "Y": 39,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 49,
         "Y": 39,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 50,
         "Y": 39,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 51,
         "Y": 39,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 52,
         "Y": 39,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 53,
         "Y": 39,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 54,
         "Y": 39,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 55,
         "Y": 39,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 56,
         "Y": 39,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 57,
         "Y": 39,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 58,
         "Y": 39,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 1,
+      "Nodetile": 1
     },
     {
       "Location": {
         "X": 59,
         "Y": 39,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 8
     },
     {
       "Location": {
@@ -32800,127 +33350,163 @@
       "Location": {
         "X": 42,
         "Y": 40,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 5
     },
     {
       "Location": {
         "X": 43,
         "Y": 40,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 44,
         "Y": 40,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 45,
         "Y": 40,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 46,
         "Y": 40,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 47,
         "Y": 40,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 48,
         "Y": 40,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 49,
         "Y": 40,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 50,
         "Y": 40,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 51,
         "Y": 40,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 52,
         "Y": 40,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 53,
         "Y": 40,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 54,
         "Y": 40,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 55,
         "Y": 40,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 56,
         "Y": 40,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 57,
         "Y": 40,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 58,
         "Y": 40,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 6
     },
     {
       "Location": {
         "X": 59,
         "Y": 40,
-        "Z": -100
-      }
+        "Z": 1
+      },
+      "Nodetype": 2,
+      "Nodetile": 7
     },
     {
       "Location": {
@@ -34385,7 +34971,7 @@
       "Location": {
         "X": 49,
         "Y": 42,
-        "Z": 1
+        "Z": 0
       },
       "Nodetype": 0,
       "Nodetile": 0
@@ -35185,7 +35771,7 @@
       "Location": {
         "X": 49,
         "Y": 43,
-        "Z": 1
+        "Z": 0
       },
       "Nodetype": 0,
       "Nodetile": 0
@@ -35951,7 +36537,7 @@
       "Location": {
         "X": 49,
         "Y": 44,
-        "Z": 1
+        "Z": 0
       },
       "Nodetype": 0,
       "Nodetile": 0

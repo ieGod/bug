@@ -4,16 +4,21 @@ import (
 	_ "embed"
 )
 
-const ()
+const (
+	SamepleRate = 44100
+)
 
 var (
 	//BugSfx map[BugAssetName]*ebiten.Image
 
+	//go:embed swat.wav
+	SwatWav []byte
+
 	//go:embed caught.wav
-	Caught_mp3 []byte
+	CaughtWav []byte
 
 	//go:embed asphodel.mp3
-	Asphodel_mp3 []byte
+	AsphodelMp3 []byte
 )
 
 func init() {

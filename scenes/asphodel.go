@@ -86,12 +86,12 @@ func NewAsphodelScene(dimensions coordinates.Dimension) *AsphodelScene {
 	}
 
 	var stream audioStream
-	stream, err = mp3.DecodeWithoutResampling(bytes.NewReader(sfx.Asphodel_mp3))
+	stream, err = mp3.DecodeWithoutResampling(bytes.NewReader(sfx.AsphodelMp3))
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	ac := audio.NewContext(44100)
+	ac := audio.CurrentContext() //audio.NewContext(sfx.SamepleRate)
 	ap, err := ac.NewPlayer(stream)
 	if err != nil {
 		log.Fatal(err)
@@ -109,10 +109,10 @@ func NewAsphodelScene(dimensions coordinates.Dimension) *AsphodelScene {
 		gameover:       false,
 		shader:         s,
 		drawcycles:     0,
+		score:          0,
 		audioContext:   ac,
 		audioPlayer:    ap,
-		seBytes:        sfx.Caught_mp3,
-		score:          0,
+		seBytes:        sfx.CaughtWav,
 		firstflag:      false,
 		musicstarted:   false,
 	}
@@ -540,8 +540,8 @@ func (scene *AsphodelScene) DrawScene(img *ebiten.Image) {
 				drawy := float64(node.Location.Y * constants.TileHeight)
 
 				op.GeoM.Reset()
-				op.GeoM.Translate(drawx, drawy)
 				op.GeoM.Scale(2, 2)
+				op.GeoM.Translate(drawx, drawy)
 				scene.scene.DrawImage(newtile, op)
 			}
 
