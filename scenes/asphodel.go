@@ -9,6 +9,7 @@ import (
 	"bug/fonts"
 	"bug/fx"
 	"bug/resources/images"
+	"bug/resources/sfx"
 	"bug/resources/shaders"
 	_ "embed"
 	"encoding/json"
@@ -19,6 +20,7 @@ import (
 	"math/rand"
 
 	"github.com/hajimehoshi/ebiten/v2"
+	"github.com/hajimehoshi/ebiten/v2/audio"
 	"github.com/hajimehoshi/ebiten/v2/inpututil"
 	"github.com/hajimehoshi/ebiten/v2/text"
 	"github.com/hajimehoshi/ebiten/v2/vector"
@@ -52,6 +54,15 @@ type AsphodelScene struct {
 	glitching      bool
 	gameover       bool
 	glitchcooldown int
+
+	//audio
+	seCh         chan []byte
+	audioContext *audio.Context
+	seBytes      []byte
+	firstflag    bool
+
+	//scoreboard
+	score int
 }
 
 func NewAsphodelScene(dimensions coordinates.Dimension) *AsphodelScene {
@@ -75,6 +86,10 @@ func NewAsphodelScene(dimensions coordinates.Dimension) *AsphodelScene {
 		gameover:       false,
 		shader:         s,
 		drawcycles:     0,
+		audioContext:   audio.NewContext(44100),
+		seBytes:        sfx.Caught_mp3,
+		score:          0,
+		firstflag:      false,
 	}
 
 	return asphodel
@@ -87,15 +102,32 @@ func (scene *AsphodelScene) Draw(img *ebiten.Image) {
 
 	scene.DrawScene(img)
 	scene.DrawGlitchIndicator(img)
+	scene.DrawScore(img)
 
 	if scene.gameover {
 		text.Draw(img, constants.Strings.GameOverReset, fonts.Bugger.ArcadeLarge, constants.OffsetGameOverResetX, constants.OffsetGameOverResetY, color.White)
+
 	}
 }
 
 func (scene *AsphodelScene) Update() error {
+
+	select {
+	case scene.seBytes = <-scene.seCh:
+		close(scene.seCh)
+		scene.seCh = nil
+	default:
+	}
+
 	if !scene.gameover {
 		scene.handleInputs()
+	} else {
+		if !scene.firstflag {
+			scene.firstflag = true
+			sePlayer := scene.audioContext.NewPlayerFromBytes(scene.seBytes)
+			sePlayer.Play()
+		}
+
 	}
 
 	if inpututil.IsKeyJustPressed(ebiten.KeyF5) {
@@ -140,6 +172,10 @@ func (scene *AsphodelScene) Update() error {
 		scene.glitchcooldown -= 1
 	} else {
 		scene.canglitch = true
+	}
+
+	if (scene.tick%60) == 0 && !scene.gameover {
+		scene.score = scene.score + 5
 	}
 
 	scene.tick++
@@ -201,6 +237,7 @@ func (scene *AsphodelScene) Load() {
 	scene.gameover = false
 	scene.tick = 0
 	scene.drawcycles = 0
+	scene.firstflag = false
 
 	scene.loaded = true
 
@@ -450,6 +487,31 @@ func (scene *AsphodelScene) DrawScene(img *ebiten.Image) {
 	//draw the npc
 	scene.scene.Clear()
 	scene.scene.DrawImage(scene.scratch, nil)
+
+	//let's add some disco tiles when glitching
+	if scene.glitching && ((scene.drawcycles/60)%10) > 8 {
+
+		for _, node := range scene.bugmap.GetWalkableNodes() {
+			if rand.Intn(9)%7 == 0 {
+
+				ox := rand.Intn(10) * constants.TileWidth
+				oy := rand.Intn(10) * constants.TileHeight
+
+				newtile := images.BugImages[images.IMGTILESET].SubImage(image.Rect(ox, oy, ox+constants.TileWidth, oy+constants.TileHeight)).(*ebiten.Image)
+
+				drawx := float64(node.Location.X * constants.TileWidth)
+				drawy := float64(node.Location.Y * constants.TileHeight)
+
+				op.GeoM.Reset()
+				op.GeoM.Translate(drawx, drawy)
+				op.GeoM.Scale(2, 2)
+				scene.scene.DrawImage(newtile, op)
+			}
+
+		}
+
+	}
+
 	npcloc := scene.hand.GetLoc64()
 	op.GeoM.Reset()
 	op.GeoM.Translate(npcloc.X, npcloc.Y)
@@ -557,4 +619,8 @@ func init() {
 
 	img2 = ebiten.NewImage(constants.BugWidth*7, constants.BugHeight*5)
 	vector.DrawFilledCircle(img2, 16, 16, 16, fx.HexToRGBA(0x0000FF, 0xff), false)
+}
+
+func (scene *AsphodelScene) DrawScore(img *ebiten.Image) {
+	text.Draw(img, fmt.Sprintf("SCORE: %d", scene.score), fonts.Bugger.Arcade, 1000, 50, color.White)
 }
