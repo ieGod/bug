@@ -17,7 +17,6 @@ import (
 	"fmt"
 	"image"
 	"image/color"
-	"io"
 	"log"
 	"math/rand"
 	"time"
@@ -80,12 +79,7 @@ func NewAsphodelScene(dimensions coordinates.Dimension) *AsphodelScene {
 		log.Fatal(err)
 	}
 
-	type audioStream interface {
-		io.ReadSeeker
-		Length() int64
-	}
-
-	var stream audioStream
+	var stream sfx.AudioStream
 	stream, err = mp3.DecodeWithoutResampling(bytes.NewReader(sfx.AsphodelMp3))
 	if err != nil {
 		log.Fatal(err)
@@ -433,6 +427,19 @@ func (scene *AsphodelScene) handleInputs() {
 			scene.glitchcooldown = constants.TimerGlitchCooldown
 			scene.canglitch = false
 			scene.glitching = true
+
+			var stream sfx.AudioStream
+			stream, err := mp3.DecodeWithoutResampling(bytes.NewReader(sfx.GlitchMp3))
+			if err != nil {
+				log.Fatal(err)
+			}
+
+			ac := audio.CurrentContext() //audio.NewContext(sfx.SamepleRate)
+			ap, err := ac.NewPlayer(stream)
+			if err != nil {
+				log.Fatal(err)
+			}
+			ap.Play()
 		}
 
 	}

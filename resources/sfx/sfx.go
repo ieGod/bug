@@ -2,6 +2,7 @@ package sfx
 
 import (
 	_ "embed"
+	"io"
 )
 
 const (
@@ -19,7 +20,15 @@ var (
 
 	//go:embed asphodel.mp3
 	AsphodelMp3 []byte
+
+	//go:embed glitch.mp3
+	GlitchMp3 []byte
 )
+
+type AudioStream interface {
+	io.ReadSeeker
+	Length() int64
+}
 
 func init() {
 	//BugImages = make(map[BugAssetName]*ebiten.Image)
