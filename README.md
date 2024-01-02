@@ -6,3 +6,8 @@ Ebitengine Holiday Hack 2023 Entry
 
 # License and Copyright
 Bug © 2023 by Diego Benavides under [bsoft games](https://www.bsoftgames.com) is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1)
+
+
+# Attribution
+**Sound Effects**
+* [therealswirls](https://itch.io/profile/therealswirls)
