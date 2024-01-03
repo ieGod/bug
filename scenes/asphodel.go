@@ -53,6 +53,7 @@ type AsphodelScene struct {
 	shader *ebiten.Shader
 
 	//logical states
+	explained      bool
 	canglitch      bool
 	glitching      bool
 	gameover       bool
@@ -109,6 +110,7 @@ func NewAsphodelScene(dimensions coordinates.Dimension) *AsphodelScene {
 		seBytes:        sfx.CaughtWav,
 		firstflag:      false,
 		musicstarted:   false,
+		explained:      false,
 	}
 
 	return asphodel
@@ -119,9 +121,13 @@ func (scene *AsphodelScene) Draw(img *ebiten.Image) {
 	img.Clear()
 	img.Fill(fx.HexToRGBA(0x25131a, 0xff))
 
-	scene.DrawScene(img)
-	scene.DrawGlitchIndicator(img)
-	scene.DrawScore(img)
+	if scene.explained {
+		scene.DrawScene(img)
+		scene.DrawGlitchIndicator(img)
+		scene.DrawScore(img)
+	} else {
+		scene.DrawExplanation(img)
+	}
 
 	if scene.gameover {
 		text.Draw(img, constants.Strings.GameOverReset, fonts.Bugger.ArcadeLarge, constants.OffsetGameOverResetX, constants.OffsetGameOverResetY, color.White)
@@ -149,6 +155,18 @@ func (scene *AsphodelScene) Update() error {
 		scene.seCh = nil
 	default:
 	}
+
+	if scene.explained {
+		scene.UpdateLogical()
+	} else {
+		scene.handleCutsceneInput()
+	}
+
+	scene.tick++
+	return nil
+}
+
+func (scene *AsphodelScene) UpdateLogical() {
 
 	if !scene.gameover {
 		scene.handleInputs()
@@ -179,7 +197,6 @@ func (scene *AsphodelScene) Update() error {
 	if scene.tick%7 == 0 {
 		scene.bug.Animate()
 		scene.hand.Animate()
-
 	}
 	scene.hand.CloseTargets()
 
@@ -208,9 +225,6 @@ func (scene *AsphodelScene) Update() error {
 	if (scene.tick%60) == 0 && !scene.gameover {
 		scene.score = scene.score + 5
 	}
-
-	scene.tick++
-	return nil
 }
 
 func (scene *AsphodelScene) Load() {
@@ -668,4 +682,22 @@ func init() {
 
 func (scene *AsphodelScene) DrawScore(img *ebiten.Image) {
 	text.Draw(img, fmt.Sprintf("SCORE: %d", scene.score), fonts.Bugger.Arcade, 1000, 50, color.White)
+}
+
+func (scene *AsphodelScene) handleCutsceneInput() {
+	if inpututil.IsKeyJustPressed(ebiten.KeyEnter) ||
+		inpututil.IsKeyJustPressed(ebiten.KeyW) ||
+		inpututil.IsKeyJustPressed(ebiten.KeyA) ||
+		inpututil.IsKeyJustPressed(ebiten.KeyS) ||
+		inpututil.IsKeyJustPressed(ebiten.KeyD) ||
+		inpututil.IsKeyJustPressed(ebiten.KeySpace) {
+		scene.explained = true
+	}
+
+}
+
+func (scene AsphodelScene) DrawExplanation(img *ebiten.Image) {
+	for i := 0; i < 3; i++ {
+		text.Draw(img, "AVOID THE HAND", fonts.Bugger.ArcadeLarge, 300, 300+i*100, color.White)
+	}
 }
