@@ -11,3 +11,6 @@ Bug © 2023 by Diego Benavides under [bsoft games](https://www.bsoftgames.com) i
 # Attribution
 **Sound Effects**
 * [therealswirls](https://itch.io/profile/therealswirls)
+
+**Artwork**
+* Dungeon Tileset II [Pixel_Poem](https://pixel-poem.itch.io/dungeon-assetpuck)
