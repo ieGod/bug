@@ -14,3 +14,7 @@ Bug © 2023 by Diego Benavides under [bsoft games](https://www.bsoftgames.com) i
 
 **Artwork**
 * Dungeon Tileset II [Pixel_Poem](https://pixel-poem.itch.io/dungeon-assetpuck)
+* Wood [freenaturestock](https://pixabay.com/users/freenaturestock-1332160/)
+* Blood Splatter [TobiasM](https://opengameart.org/content/blood-splat)
+* Bug: Diego Benavides
+* Maurice the Floormaster: Diego Benavides
